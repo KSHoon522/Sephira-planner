@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0f1115;
+  --panel: #161a21;
+  --panel-2: #1c212b;
+  --line: #2a3140;
+  --fg: #e6e9ef;
+  --muted: #8a94a6;
+  --accent: #f0b35a;
+  --good: #6ad48a;
+  --bad: #f06a6a;
+  --warn: #f0c96a;
+  --cell: #1b2029;
+  --cell-hover: #242b37;
+  --r-common: #f2f4f8;
+  --r-advanced: #5fa8ff;
+  --r-rare: #ffd84d;
+  --r-legendary: #ff5c5c;
+  --r-eternal: #ff7ab8;
+  --r-bond: #6ad4c8;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  font-size: 14px;
+}
+
+.rarity-common { --rc: var(--r-common); }
+.rarity-advanced { --rc: var(--r-advanced); }
+.rarity-rare { --rc: var(--r-rare); }
+.rarity-legendary { --rc: var(--r-legendary); }
+.rarity-eternal { --rc: var(--r-eternal); }
+.rarity-bond { --rc: var(--r-bond); }
+
+.scroll-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
+
+input[type="range"] { accent-color: var(--accent); }
+input, select, button { font: inherit; }

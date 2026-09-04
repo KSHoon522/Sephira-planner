@@ -1,0 +1,12 @@
+[
+{"slug":"tainted-bandage","name":"Tainted Bandage","rarity":"Common","cost":400,"stars":4,"categories":["Precision"],"effects":["Critical Chance +9%","Physical Damage +3"],"scaling":{"Critical Chance":["+1%","+3%","+6%","+9%"],"Physical Damage":["+1","+2","+3","+3"]}},
+{"slug":"tempest","name":"Tempest","rarity":"Common","cost":400,"stars":1,"categories":[],"effects":[],"grimoire":true,"behaviour":"Start-up"},
+{"slug":"teros-spirit-powder","name":"Tero’s Spirit Powder","rarity":"Advanced","cost":600,"stars":6,"categories":["Companion","Ember"],"effects":["Summons a jellyfish that fires Fire projectiles"]},
+{"slug":"thorn-bush","name":"Thorn Bush","rarity":"Advanced","cost":600,"stars":5,"categories":["Wind Song"],"restriction":"Triggers when in the inner slots","effects":["Increase push force on Weapon Attack."]},
+{"slug":"thorn-charm","name":"Thorn Charm","rarity":"Advanced","cost":600,"stars":4,"categories":["Sturdy"],"effects":["Critical Chance +10%","Physical Damage +3"],"scaling":{"Critical Chance":["+2%","+4%","+6%","+10%"],"Physical Damage":["+1","+1","+2","+3"]}},
+{"slug":"thrust-manual","name":"Thrust Manual","rarity":"Advanced","cost":600,"stars":1,"categories":["Sturdy"],"effects":[],"weaponRequirement":"Only works while a katana is equipped. With any other weapon class the charm sits disabled in the bag, and reward rolls stop offering it."},
+{"slug":"thunder-armor","name":"Thunder Armor","rarity":"Rare","cost":800,"stars":5,"categories":["Magitech"],"effects":[],"behaviour":"Start-up"},
+{"slug":"thunder-s-earring","name":"Thunder's Earring","rarity":"Advanced","cost":600,"stars":6,"categories":["Magitech"],"effects":["Lightning Damage +6"],"scaling":{"Lightning Damage":["+1","+2","+3","+4","+5","+6"]}},
+{"slug":"thunderfrost-butterfly","name":"Thunderfrost Butterfly","rarity":"Rare","cost":800,"stars":4,"categories":["Storm Cloud","Glacier"],"effects":["Storm Cloud changes to Snowstorm Cloud","Cold Damage +2","Consumption Speed of Storm Cloud +6%"],"behaviour":"Boosting","flags":["Dual item"],"scaling":{"Storm Cloud changes to Snowstorm Cloud":["","","",""],"Cold Damage":["+2","+4","+6","+8"],"Consumption Speed of Storm Cloud":["+6%","+12%","+18%","+24%"]}},
+{"slug":"thunderous-steps","name":"Thunderous Steps","rarity":"Advanced","cost":600,"stars":3,"categories":["Magitech"],"effects":[],"behaviour":"Boosting"}
+]

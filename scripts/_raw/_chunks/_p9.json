@@ -1,0 +1,12 @@
+[
+{"slug":"tuning-fork","name":"Tuning Fork","rarity":"Rare","cost":800,"stars":5,"categories":["Academy","Sturdy"],"effects":["Consume all stacks with Weapon Attack to deal Chaos damage at the attack point (considered as Grimoire damage)"],"flags":["Dual item"],"comboEffects":{"2":"Grimoire haste +8","4":"Grimoire haste +12","6":"Grimoire haste +16","8":"Grimoire haste +20","10":"Grimoire damage +15% and MP regen +8"}},
+{"slug":"valters-work-monocle","name":"Valter’s Work Monocle","rarity":"Legendary","cost":1100,"stars":5,"categories":["Precision"],"effects":["Critical Chance +45%"],"scaling":{"Critical Chance":["+10%","+19%","+28%","+35%","+45%"]}},
+{"slug":"vital-touch","name":"Vital Touch","rarity":"Rare","cost":800,"stars":4,"categories":["Sturdy"],"effects":["Final HP -33%"],"scaling":{"Final HP":["-55%","-48%","-40%","-33%"]}},
+{"slug":"voluspa","name":"Voluspa","rarity":"Rare","cost":800,"stars":6,"categories":["Frost Relic"],"effects":[],"behaviour":"Start-up"},
+{"slug":"wanderer-s-necklace","name":"Wanderer's Necklace","rarity":"Rare","cost":800,"stars":3,"categories":["Wind Song"],"effects":["Attack Speed +18%","Highest Elemental Damage +6"],"behaviour":"Boosting","scaling":{"Attack Speed":["+6%","+12%","+18%"],"Highest Elemental Damage":["+2","+4","+6"]}},
+{"slug":"warm-stone","name":"Warm Stone","rarity":"Rare","cost":800,"stars":4,"categories":["Precision"],"restriction":"Triggers when in the inner slots","effects":[]},
+{"slug":"warning-letter","name":"Warning Letter","rarity":"Rare","cost":800,"stars":2,"categories":[],"effects":["Move Speed +8%"],"scaling":{"Move Speed":["+4%","+8%"]}},
+{"slug":"warrior-seal","name":"Warrior Seal","rarity":"Advanced","cost":600,"stars":6,"categories":["Sturdy"],"effects":["Physical Damage +13","Attack Speed +15%"],"scaling":{"Physical Damage":["+1","+2","+3","+4","+6","+8","+10","+13"],"Attack Speed":["+5%","+5%","+5%","+10%","+10%","+10%","+15%","+15%"]}},
+{"slug":"water-bag","name":"Water Bag","rarity":"Advanced","cost":600,"stars":4,"categories":["Lake"],"effects":["Increases Max MP by 1 every time you use MP (up to MP, cooldown: 5 seconds)"],"comboEffects":{"3":"Max MP +20 and MP regen +5","6":"Max MP +30 and +10% damage on abilities with an MP cost","9":"Max MP +40 and +25% damage on abilities with an MP cost"}},
+{"slug":"water-bolt","name":"Water Bolt","rarity":"Common","cost":400,"stars":2,"categories":[],"effects":[]}
+]

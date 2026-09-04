@@ -1,0 +1,12 @@
+[
+{"slug":"scrap-of-red-cloth","name":"Scrap of Red Cloth","rarity":"Advanced","cost":600,"stars":4,"categories":["Curse"],"effects":[],"comboEffects":{"2":"Debuff damage +10% and move speed +7%","4":"Debuff damage +15%"}},
+{"slug":"scythe-of-berut","name":"Scythe of Berut","rarity":"Legendary","cost":1100,"stars":4,"categories":["Precision"],"effects":["Critical Chance +10%","Triggers Execution by the amount Critical Chance exceeds 100%"],"scaling":{"Critical Chance":["+2.5%","+5%","+7.5%","+10%"]}},
+{"slug":"serens-rushed-letter","name":"Seren’s Rushed Letter","rarity":"Rare","cost":800,"stars":3,"categories":["Guardian"],"effects":[]},
+{"slug":"sharp-acorn","name":"Sharp Acorn","rarity":"Advanced","cost":600,"stars":4,"categories":["Storm Cloud"],"effects":["Storm Cloud Recovery Rate during Combat +12%","Evasion +6"],"scaling":{"Storm Cloud Recovery Rate during Combat":["+3%","+6%","+9%","+12%"],"Evasion":["+3","+3","+6","+6"]}},
+{"slug":"sharp-eye","name":"Sharp Eye","rarity":"Advanced","cost":600,"stars":3,"categories":["Precision"],"effects":[]},
+{"slug":"sharp-flint","name":"Sharp Flint","rarity":"Advanced","cost":600,"stars":4,"categories":["Elemental"],"effects":["Critical Chance +8%","Highest Elemental Damage +4"],"scaling":{"Critical Chance":["+2%","+4%","+6%","+8%"],"Highest Elemental Damage":["+1","+2","+3","+4"]},"comboEffects":{"2":"Highest elemental damage +5","4":"Highest elemental damage +6","6":"All elemental damage +10%"}},
+{"slug":"sheet-music-galaxy","name":"Sheet Music 'Galaxy'","rarity":"Rare","cost":800,"stars":3,"categories":["Planet","Wind Song"],"effects":["Attack Speed +12%","Each Weapon Attack speeds up the attack cycle of planets"],"behaviour":"Boosting","flags":["Dual item"],"scaling":{"Attack Speed":["+4%","+8%","+12%"],"Each Weapon Attack speeds up the attack cycle of planets":["","",""]}},
+{"slug":"sheet-music-the-typhoon","name":"Sheet Music 'The Typhoon'","rarity":"Rare","cost":800,"stars":3,"categories":["Storm Cloud","Wind Song"],"effects":["Attack Speed +12%"],"behaviour":"Boosting","flags":["Dual item"],"scaling":{"Attack Speed":["+4%","+8%","+12%"]}},
+{"slug":"shield","name":"Shield","rarity":"Common","cost":400,"stars":2,"categories":["Guardian"],"effects":[]},
+{"slug":"shield-bag","name":"Shield Bag","rarity":"Rare","cost":800,"stars":4,"categories":["Academy","Guardian"],"effects":[],"flags":["Dual item"],"comboEffects":{"2":"Grimoire haste +8","4":"Grimoire haste +12","6":"Grimoire haste +16","8":"Grimoire haste +20","10":"Grimoire damage +15% and MP regen +8"}}
+]

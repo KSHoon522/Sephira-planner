@@ -1,0 +1,2181 @@
+[
+ {
+  "id": "advance",
+  "name": "Advance",
+  "nameKo": "전진",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -2,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -3,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "advent",
+  "name": "Advent",
+  "nameKo": "도래",
+  "rarity": "common",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -2,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 2,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "approximation",
+  "name": "Approximation",
+  "nameKo": "근사",
+  "rarity": "common",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "binary-star",
+  "name": "Binary Star",
+  "nameKo": "쌍성",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -2,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 2,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "brilliance",
+  "name": "Brilliance",
+  "nameKo": "광휘",
+  "rarity": "legendary",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "row",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "cheers",
+  "name": "Cheers",
+  "nameKo": "환호",
+  "rarity": "common",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "chivalry",
+  "name": "Chivalry",
+  "nameKo": "기사도",
+  "rarity": "common",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -2,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "cohesion",
+  "name": "Cohesion",
+  "nameKo": "응집",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "row",
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "competition",
+  "name": "Competition",
+  "nameKo": "경쟁",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "compression",
+  "name": "Compression",
+  "nameKo": "압축",
+  "rarity": "legendary",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 3
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -2,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -3,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "conviction",
+  "name": "Conviction",
+  "nameKo": "확신",
+  "rarity": "legendary",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 5
+    }
+   }
+  ]
+ },
+ {
+  "id": "courage",
+  "name": "Courage",
+  "nameKo": "용기",
+  "rarity": "legendary",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "diagonal",
+    "dir": "backslash",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "curse",
+  "name": "Curse",
+  "nameKo": "저주",
+  "rarity": "legendary",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "checkerboard",
+    "parity": "odd",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "checkerboard",
+    "parity": "even",
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "custom",
+  "name": "Custom",
+  "nameKo": "합성 석판",
+  "rarity": "legendary",
+  "rotatable": false,
+  "condition": null,
+  "queries": [],
+  "placeholder": true
+ },
+ {
+  "id": "daydream",
+  "name": "Daydream",
+  "nameKo": "백일몽",
+  "rarity": "legendary",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "dedication",
+  "name": "Dedication",
+  "nameKo": "헌정",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "defensive-move",
+  "name": "Defensive Move",
+  "nameKo": "방어수",
+  "rarity": "rare",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "desire",
+  "name": "Desire",
+  "nameKo": "열망",
+  "rarity": "advanced",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "destiny",
+  "name": "Destiny",
+  "nameKo": "운명",
+  "rarity": "common",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "disconnection",
+  "name": "Disconnection",
+  "nameKo": "단절",
+  "rarity": "rare",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 3
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 3
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "distribution",
+  "name": "Distribution",
+  "nameKo": "분배",
+  "rarity": "advanced",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "dry",
+  "name": "Dry",
+  "nameKo": "건조",
+  "rarity": "common",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "entrance",
+  "name": "Entrance",
+  "nameKo": "입구",
+  "rarity": "advanced",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "exit",
+  "name": "Exit",
+  "nameKo": "출구",
+  "rarity": "advanced",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "exploitation",
+  "name": "Exploitation",
+  "nameKo": "착취",
+  "rarity": "common",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "flag",
+  "name": "Flag",
+  "nameKo": "깃발",
+  "rarity": "rare",
+  "rotatable": false,
+  "condition": "left-end",
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 2,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 3,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "foundation",
+  "name": "Foundation",
+  "nameKo": "기반",
+  "rarity": "rare",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "row",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "future",
+  "name": "Future",
+  "nameKo": "미래",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "gaze",
+  "name": "Gaze",
+  "nameKo": "시선",
+  "rarity": "common",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "good-will",
+  "name": "Good Will",
+  "nameKo": "선의",
+  "rarity": "common",
+  "rotatable": false,
+  "condition": "bottom",
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "handshake",
+  "name": "Handshake",
+  "nameKo": "악수",
+  "rarity": "common",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "harvest",
+  "name": "Harvest",
+  "nameKo": "수확",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "heaven",
+  "name": "Heaven",
+  "nameKo": "천국",
+  "rarity": "eternal",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "checkerboard",
+    "parity": "odd",
+    "effect": {
+     "kind": "level",
+     "value": 9
+    }
+   },
+   {
+    "type": "checkerboard",
+    "parity": "even",
+    "effect": {
+     "kind": "level",
+     "value": 9
+    }
+   }
+  ]
+ },
+ {
+  "id": "hell",
+  "name": "Hell",
+  "nameKo": "지옥",
+  "rarity": "eternal",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "checkerboard",
+    "parity": "odd",
+    "effect": {
+     "kind": "level",
+     "value": -9
+    }
+   },
+   {
+    "type": "checkerboard",
+    "parity": "even",
+    "effect": {
+     "kind": "level",
+     "value": -9
+    }
+   }
+  ]
+ },
+ {
+  "id": "honor",
+  "name": "Honor",
+  "nameKo": "명예",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -2,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "hope",
+  "name": "Hope",
+  "nameKo": "희망",
+  "rarity": "common",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "hospitality",
+  "name": "Hospitality",
+  "nameKo": "환대",
+  "rarity": "legendary",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "ignore"
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "ignore"
+    }
+   }
+  ]
+ },
+ {
+  "id": "junction",
+  "name": "Junction",
+  "nameKo": "접합",
+  "rarity": "rare",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -2,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -3,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 2,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 3,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "justice",
+  "name": "Justice",
+  "nameKo": "정의",
+  "rarity": "advanced",
+  "rotatable": false,
+  "condition": "left-or-right-end",
+  "queries": [
+   {
+    "type": "column",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "last-stand",
+  "name": "Last Stand",
+  "nameKo": "배수진",
+  "rarity": "rare",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 5
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "link",
+  "name": "Link",
+  "nameKo": "이음",
+  "rarity": "rare",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "ignore"
+    }
+   }
+  ]
+ },
+ {
+  "id": "miracle",
+  "name": "Miracle",
+  "nameKo": "기적",
+  "rarity": "legendary",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "row",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "column",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "nurture",
+  "name": "Nurture",
+  "nameKo": "양육",
+  "rarity": "common",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 2,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "oaths",
+  "name": "Oaths",
+  "nameKo": "맹세",
+  "rarity": "rare",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -2,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "oppression",
+  "name": "Oppression",
+  "nameKo": "압제",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "disable"
+    }
+   }
+  ]
+ },
+ {
+  "id": "past",
+  "name": "Past",
+  "nameKo": "과거",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "peace",
+  "name": "Peace",
+  "nameKo": "평화",
+  "rarity": "legendary",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 3
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "power",
+  "name": "Power",
+  "nameKo": "권능",
+  "rarity": "rare",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "preparation",
+  "name": "Preparation",
+  "nameKo": "준비",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "progress",
+  "name": "Progress",
+  "nameKo": "발전",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "pulsation",
+  "name": "Pulsation",
+  "nameKo": "고동",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -2,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "rally",
+  "name": "Rally",
+  "nameKo": "집결",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   }
+  ]
+ },
+ {
+  "id": "rebellion",
+  "name": "Rebellion",
+  "nameKo": "반항",
+  "rarity": "rare",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "diagonal",
+    "dir": "slash",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "requital",
+  "name": "Requital",
+  "nameKo": "보은",
+  "rarity": "eternal",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "row",
+    "effect": {
+     "kind": "level",
+     "value": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "shade",
+  "name": "Shade",
+  "nameKo": "차양",
+  "rarity": "rare",
+  "rotatable": false,
+  "condition": "top",
+  "queries": [
+   {
+    "type": "bottom-cells",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "simultaneity",
+  "name": "Simultaneity",
+  "nameKo": "동시성",
+  "rarity": "rare",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "column",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "stack",
+  "name": "Stack",
+  "nameKo": "적재",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -2,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -2,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "surge",
+  "name": "Surge",
+  "nameKo": "고양",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "ignore"
+    }
+   }
+  ]
+ },
+ {
+  "id": "thorns",
+  "name": "Thorns",
+  "nameKo": "가시",
+  "rarity": "legendary",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 2
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "three-headed",
+  "name": "Three-Headed",
+  "nameKo": "삼두",
+  "rarity": "advanced",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "transference",
+  "name": "Transference",
+  "nameKo": "전이",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "row",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "column",
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "trick",
+  "name": "Trick",
+  "nameKo": "장난",
+  "rarity": "common",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "unity",
+  "name": "Unity",
+  "nameKo": "화합",
+  "rarity": "common",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": 1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "vigilance",
+  "name": "Vigilance",
+  "nameKo": "경계",
+  "rarity": "legendary",
+  "rotatable": false,
+  "condition": null,
+  "queries": [
+   {
+    "type": "top-row",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   },
+   {
+    "type": "bottom-cells",
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ },
+ {
+  "id": "wave",
+  "name": "Wave",
+  "nameKo": "파도",
+  "rarity": "advanced",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 3
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 0,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   },
+   {
+    "type": "cell",
+    "dx": 1,
+    "dy": 0,
+    "effect": {
+     "kind": "level",
+     "value": -1
+    }
+   }
+  ]
+ },
+ {
+  "id": "wedge",
+  "name": "Wedge",
+  "nameKo": "쐐기",
+  "rarity": "rare",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 3
+    }
+   }
+  ]
+ },
+ {
+  "id": "wit",
+  "name": "Wit",
+  "nameKo": "재치",
+  "rarity": "common",
+  "rotatable": true,
+  "condition": null,
+  "queries": [
+   {
+    "type": "cell",
+    "dx": -1,
+    "dy": -1,
+    "effect": {
+     "kind": "level",
+     "value": 1
+    }
+   }
+  ]
+ }
+]

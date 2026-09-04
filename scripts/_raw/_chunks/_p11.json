@@ -1,0 +1,9 @@
+[
+{"slug":"windgrass-scarf","name":"Windgrass Scarf","rarity":"Common","cost":400,"stars":4,"categories":["Wind Song"],"effects":[]},
+{"slug":"wings","name":"Wings","rarity":"Legendary","cost":1100,"stars":6,"categories":["Wind Song"],"effects":["Attack Speed +18%"],"scaling":{"Attack Speed":["+3%","+6%","+9%","+12%","+15%","+18%"]}},
+{"slug":"wooden-decorative-tag","name":"Wooden Decorative Tag","rarity":"Advanced","cost":600,"stars":3,"categories":["Companion"],"effects":[],"grimoire":false},
+{"slug":"yakumo-short-blade","name":"Yakumo Short Blade","rarity":"Rare","cost":800,"stars":4,"categories":["Sturdy"],"effects":["Dash Attack Damage +50%","Dash Recovery Speed +20%"],"scaling":{"Dash Attack Damage":["+10%","+20%","+30%","+40%","+50%"],"Dash Recovery Speed":["+4%","+8%","+12%","+16%","+20%"]}},
+{"slug":"yellow-planet","name":"Yellow Planet","rarity":"Advanced","cost":600,"stars":7,"categories":["Planet"],"effects":[],"behaviour":"Boosting"},
+{"slug":"zap-bug","name":"Zap Bug","rarity":"Rare","cost":800,"stars":6,"categories":["Magitech"],"effects":["Electrocution stacks +3"],"scaling":{"Electrocution stacks":["+0","+1","+1","+2","+2","+3"]}},
+{"slug":"zappy-custard-pastry","name":"Zappy Custard Pastry","rarity":"Common","cost":400,"stars":3,"categories":["Storm Cloud"],"effects":[],"behaviour":"Start-up"}
+]

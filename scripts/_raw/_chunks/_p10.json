@@ -1,0 +1,12 @@
+[
+{"slug":"water-elementals-paw-wax","name":"Water Elemental’s Paw Wax","rarity":"Rare","cost":800,"stars":1,"categories":[],"effects":[],"grimoire":false},
+{"slug":"water-spirit","name":"Water Spirit","rarity":"Rare","cost":800,"stars":5,"categories":["Lake","Precision"],"effects":[],"behaviour":"Boosting","flags":["Dual item"],"comboEffects":{"3":"Max MP +20 and MP regen +5","6":"Max MP +30 and +10% damage on abilities with an MP cost","9":"Max MP +40 and +25% damage on abilities with an MP cost"}},
+{"slug":"whirlwind-stone","name":"Whirlwind Stone","rarity":"Advanced","cost":600,"stars":4,"categories":[],"effects":["Universal Damage Boost +8%","Move Speed +24%"],"flags":["Never appears as a reward"],"scaling":{"Universal Damage Boost":["+2%","+4%","+6%","+8%"],"Move Speed":["+6%","+12%","+18%","+24%"]},"howToGet":"Stocked by the wandering witch, a merchant who only shows up as a rare floor event. Her shop is the only place it appears; regular reward rolls never offer it."},
+{"slug":"white-branch","name":"White Branch","rarity":"Rare","cost":800,"stars":5,"categories":["Lake"],"effects":[],"comboEffects":{"3":"Max MP +20 and MP regen +5","6":"Max MP +30 and +10% damage on abilities with an MP cost","9":"Max MP +40 and +25% damage on abilities with an MP cost"}},
+{"slug":"white-cape","name":"White Cape","rarity":"Advanced","cost":600,"stars":6,"categories":["Mystic"],"effects":["Duration of Buffs Applied by Self +200%"],"scaling":{"Duration of Buffs Applied by Self":["+30%","+60%","+100%","+130%","+160%","+200%"]}},
+{"slug":"white-crust-bread","name":"White Crust Bread","rarity":"Legendary","cost":1100,"stars":3,"categories":["Guardian"],"effects":[]},
+{"slug":"white-eggshell","name":"White Eggshell","rarity":"Rare","cost":800,"stars":5,"categories":["Mystic"],"effects":[]},
+{"slug":"white-paper","name":"White Paper","rarity":"Advanced","cost":600,"stars":2,"categories":[],"effects":["Universal Damage Boost +6%","Increase combo count by 1 if artifacts in both adjacent slots have the same combo","",""],"scaling":{"Universal Damage Boost":["+3%","+6%"]}},
+{"slug":"white-planet","name":"White Planet","rarity":"Rare","cost":800,"stars":8,"categories":["Planet"],"effects":[],"behaviour":"Boosting","howToGet":"Enters the item pool through the pocket dimension shop: pay its sapphire price there once and the unlock is permanent."},
+{"slug":"wind-sheet-music","name":"Wind Sheet Music","rarity":"Advanced","cost":600,"stars":5,"categories":["Wind Song"],"effects":[]}
+]

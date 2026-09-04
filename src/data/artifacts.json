@@ -1,0 +1,4563 @@
+[
+ {
+  "id": "absolute-ring",
+  "name": "Absolute Ring",
+  "nameKo": "절대반지",
+  "rarity": "legendary",
+  "maxLevel": 2,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Greatsword",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Special Attack: Whirlwind range: {SWEEPRANGE}; Special Attack Damage {SWEEPDAMAGE}"
+ },
+ {
+  "id": "academy-brigandine",
+  "name": "Academy Brigandine",
+  "nameKo": "아카데미 브리건딘",
+  "rarity": "rare",
+  "maxLevel": 5,
+  "categories": [
+   "Guardian",
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Defense +10; Grimoire Haste +35"
+ },
+ {
+  "id": "academy-fountain-pen",
+  "name": "Academy Fountain Pen",
+  "nameKo": "아카데미 만년필",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Shadow",
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Accelerate all Grimoire cooldowns by 25% upon successful Evasion"
+ },
+ {
+  "id": "agma-projection-sword-no-190-191",
+  "name": "Agma Projection Sword No. 190, 191",
+  "nameKo": "아그마 투영검 190,191번",
+  "rarity": "rare",
+  "maxLevel": 7,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Physical Damage +14"
+ },
+ {
+  "id": "ahmads-spirit-powder",
+  "name": "Ahmad’s Spirit Powder",
+  "nameKo": "아마드의 영혼 가루",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Companion",
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Summon a jellyfish that fires Lightning projectiles"
+ },
+ {
+  "id": "air-bolt",
+  "name": "Air Bolt",
+  "nameKo": "Air Bolt",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "alchemist-s-flask",
+  "name": "Alchemist's Flask",
+  "nameKo": "연금술사의 플라스크",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Alchemy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Drink a potion to gain a buff that increases Universal Damage Boost by {ADD} for {TIME} sec"
+ },
+ {
+  "id": "alfonsos-horn",
+  "name": "Alfonso’s Horn",
+  "nameKo": "알폰소의 뿔",
+  "rarity": "rare",
+  "maxLevel": 7,
+  "categories": [
+   "Companion"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Evasion +10; Companion Damage +80%"
+ },
+ {
+  "id": "amber",
+  "name": "Amber",
+  "nameKo": "호박석",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Mystic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Deals {DAMAGE}% additional damage to enemies with full health"
+ },
+ {
+  "id": "amulet-of-courage",
+  "name": "Amulet of Courage",
+  "nameKo": "용기의 아뮬렛",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Greatsword",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage +10%; Life Steal +1"
+ },
+ {
+  "id": "ancient-anvil",
+  "name": "Ancient Anvil",
+  "nameKo": "고대 모루",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Solar Blade"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Solar Blade falls to the ground 40% faster; Fire Damage +8"
+ },
+ {
+  "id": "angry-potato",
+  "name": "Angry Potato",
+  "nameKo": "화난 감자",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Alchemy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Ignore Defense +15%; Luck +4; Move Speed +10%"
+ },
+ {
+  "id": "artificial-fairy-iphiel",
+  "name": "Artificial Fairy, Iphiel",
+  "nameKo": "인공정령 이피엘",
+  "rarity": "rare",
+  "maxLevel": 5,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": "Sword and shield",
+  "unique": true,
+  "grimoire": false,
+  "effect": "While blocking, grants MP MP Regeneration but reduces Move Speed by {SPEED}%"
+ },
+ {
+  "id": "ashen-planet",
+  "name": "Ashen Planet",
+  "nameKo": "잿빛 행성",
+  "rarity": "common",
+  "maxLevel": 5,
+  "categories": [
+   "Planet"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Summons a gray planet that shoots Ice projectiles [Damage: {DAMAGE}]"
+ },
+ {
+  "id": "azure-pearl",
+  "name": "Azure Pearl",
+  "nameKo": "푸른 진주",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "MP Steal +4"
+ },
+ {
+  "id": "balisong",
+  "name": "Balisong",
+  "nameKo": "발리송",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Damage dealt to enemies within {RANGE} tiles: {DAMAGE}"
+ },
+ {
+  "id": "ball-of-red-yarn",
+  "name": "Ball of Red Yarn",
+  "nameKo": "붉은 실뭉치",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Burn Damage +100%; Upon attacking, creates a blazing field"
+ },
+ {
+  "id": "banner-of-encouragement",
+  "name": "Banner of Encouragement",
+  "nameKo": "격려의 깃발",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Summon a flag at the designated location. Allies within the flag's range have their Attack Speed increased by {SPEED}%"
+ },
+ {
+  "id": "battle-bracelet-of-lerid",
+  "name": "Battle Bracelet of Lerid",
+  "nameKo": "레리드의 전투 팔찌",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Shadow"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Dash Count +2; True Damage +3; Move Speed +8%; Dash invincibility is treated as a Evasion success effect "
+ },
+ {
+  "id": "battle-mages-gloves",
+  "name": "Battle Mage’s Gloves",
+  "nameKo": "전투 마법사의 장갑",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Grimoire Damage +20%; Move Speed +6%"
+ },
+ {
+  "id": "beast-s-heart",
+  "name": "Beast's Heart",
+  "nameKo": "야수의 심장",
+  "rarity": "legendary",
+  "maxLevel": 4,
+  "categories": [
+   "Guardian"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Defense +20; Universal Damage Boost +10%; Luck +6"
+ },
+ {
+  "id": "begonia-sachet",
+  "name": "Begonia Sachet",
+  "nameKo": "베고니아 향 주머니",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Normal Attack Damage +10%"
+ },
+ {
+  "id": "bicorn-pipe",
+  "name": "Bicorn Pipe",
+  "nameKo": "이각수 관",
+  "rarity": "rare",
+  "maxLevel": 5,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Fires Bolt Magic in three directions. (Each spell’s damage is reduced by {DAMAGERATIO}) MP cost increased by {COST}."
+ },
+ {
+  "id": "blank-check",
+  "name": "Blank Check",
+  "nameKo": "Blank Check",
+  "rarity": "rare",
+  "maxLevel": 0,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "blessing",
+  "name": "Blessing",
+  "nameKo": "축복",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "blizzard-hammer",
+  "name": "Blizzard Hammer",
+  "nameKo": "눈보라 망치",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Frost Relic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Recharges every {TIME} seconds during combat. Activates the following effect after dashing when charged."
+ },
+ {
+  "id": "blood-of-obrus",
+  "name": "Blood of Obrus",
+  "nameKo": "오브러스의 피",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "MP Steal +12"
+ },
+ {
+  "id": "blood-stone-ring",
+  "name": "Blood Stone Ring",
+  "nameKo": "혈석 반지",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Mystic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Upon attaining {KILL} kills, recover {HEAL} HP"
+ },
+ {
+  "id": "bloodstone-earrings",
+  "name": "Bloodstone Earrings",
+  "nameKo": "혈석 귀걸이",
+  "rarity": "legendary",
+  "maxLevel": 3,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Life Steal +8; Defense -10"
+ },
+ {
+  "id": "blue-claw",
+  "name": "Blue Claw",
+  "nameKo": "푸른 발톱",
+  "rarity": "legendary",
+  "maxLevel": 3,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Cold Damage +9; Max MP +20"
+ },
+ {
+  "id": "blue-needle-of-the-north",
+  "name": "Blue Needle of the North",
+  "nameKo": "북향의 금빛 침",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "If Rarity is {RARITY} or below, bonus damage {DEPENDENCYVALUE}"
+ },
+ {
+  "id": "blue-planet",
+  "name": "Blue Planet",
+  "nameKo": "푸른 행성",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Planet"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Summons a blue planet that shoots Physical projectiles [Damage: {DAMAGE}]"
+ },
+ {
+  "id": "blue-ring",
+  "name": "Blue Ring",
+  "nameKo": "푸른 고리",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Mystic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "If current HP is HP% or more, Universal Damage Boost {DAMAGE}%"
+ },
+ {
+  "id": "blue-wrist-guard",
+  "name": "Blue Wrist Guard",
+  "nameKo": "푸른 손목 보호대",
+  "rarity": "legendary",
+  "maxLevel": 5,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Special Attack Damage +50%"
+ },
+ {
+  "id": "brass-mirror-fragment",
+  "name": "Brass Mirror Fragment",
+  "nameKo": "황동거울 파편",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Crossbow",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Reduce MP Cost of Special Attack +50%"
+ },
+ {
+  "id": "broken-mirror",
+  "name": "Broken Mirror",
+  "nameKo": "깨진 거울",
+  "rarity": "advanced",
+  "maxLevel": 1,
+  "categories": [
+   "Guardian"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Defense +8"
+ },
+ {
+  "id": "broken-root",
+  "name": "Broken Root",
+  "nameKo": "부서진 나무뿌리",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "broken-sapphire",
+  "name": "Broken Sapphire",
+  "nameKo": "부서진 사파이어",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Shadow"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Evasion +6; Defense +6"
+ },
+ {
+  "id": "bronze-mirror-fragment",
+  "name": "Bronze Mirror Fragment",
+  "nameKo": "청동거울 파편",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Greatsword",
+  "unique": false,
+  "grimoire": false,
+  "effect": "Reduce MP Cost of Special Attack +50%"
+ },
+ {
+  "id": "bucket-of-plump-berries",
+  "name": "Bucket of Plump Berries",
+  "nameKo": "통통열매 양동이",
+  "rarity": "rare",
+  "maxLevel": 1,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Restore MP{PERCENT}% immediately on use"
+ },
+ {
+  "id": "bunnyville-guard-helmet",
+  "name": "Bunnyville Guard Helmet",
+  "nameKo": "토끼 마을 경비병 투구",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage +16%; Evasion -8"
+ },
+ {
+  "id": "burn-weapon-damage",
+  "name": "Burn Weapon Damage",
+  "nameKo": "Burn Weapon Damage",
+  "rarity": "legendary",
+  "maxLevel": 4,
+  "categories": [
+   "Sturdy",
+   "Curse"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage {DAMAGE}% increase per stack of debuff applied to the enemy"
+ },
+ {
+  "id": "captivating-lure",
+  "name": "Captivating Lure",
+  "nameKo": "매혹하는 루어",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Lake",
+   "Elemental"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "MP Regeneration +8; Fire Damage +2; Cold Damage +2; Lightning Damage +2; Physical Damage +2"
+ },
+ {
+  "id": "chalcedony-key",
+  "name": "Chalcedony Key",
+  "nameKo": "캘세더니 열쇠",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Lightning Damage {DAMAGE}"
+ },
+ {
+  "id": "charm-of-aspiration",
+  "name": "Charm of Aspiration",
+  "nameKo": "열망의 부적",
+  "rarity": "common",
+  "maxLevel": 3,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Attack Critical Chance increases by {CRITICAL}%"
+ },
+ {
+  "id": "charm-of-intelligence",
+  "name": "Charm of Intelligence",
+  "nameKo": "명석함의 부적",
+  "rarity": "common",
+  "maxLevel": 3,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Cold Damage +8"
+ },
+ {
+  "id": "charm-of-lightning",
+  "name": "Charm of Lightning",
+  "nameKo": "전격의 부적",
+  "rarity": "common",
+  "maxLevel": 3,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Lightning Damage +8"
+ },
+ {
+  "id": "charm-of-skill",
+  "name": "Charm of Skill",
+  "nameKo": "재주의 부적",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [
+   "Shadow"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Evasion +6"
+ },
+ {
+  "id": "charm-of-strength",
+  "name": "Charm of Strength",
+  "nameKo": "힘의 부적",
+  "rarity": "common",
+  "maxLevel": 3,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Physical Damage +6"
+ },
+ {
+  "id": "cintamani-stone",
+  "name": "Cintamani Stone",
+  "nameKo": "친타마니 돌",
+  "rarity": "legendary",
+  "maxLevel": 0,
+  "categories": [
+   "Mystic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "When receiving fatal damage, this item is destroyed and the following effects are activated"
+ },
+ {
+  "id": "clear-cube",
+  "name": "Clear Cube",
+  "nameKo": "무색 큐브",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "True Damage +3; Move Speed +12%; Attack Speed +12%"
+ },
+ {
+  "id": "cloak-of-verdant-spirit",
+  "name": "Cloak of Verdant Spirit",
+  "nameKo": "환록의 망토",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Shadow"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Dash Count +1; Evasion +8; Critical Chance +4%"
+ },
+ {
+  "id": "cloth-armor",
+  "name": "Cloth Armor",
+  "nameKo": "천 갑옷",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [
+   "Guardian"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Defense +12"
+ },
+ {
+  "id": "cloud-bottle",
+  "name": "Cloud Bottle",
+  "nameKo": "구름 병",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Storm Cloud"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Consumption Speed of Storm Cloud +30%"
+ },
+ {
+  "id": "cloud-seed-arrowhead",
+  "name": "Cloud Seed Arrowhead",
+  "nameKo": "구름씨 화살촉",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Storm Cloud"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "50% chance for enhanced Storm Cloud lightning bolts"
+ },
+ {
+  "id": "cold-lock",
+  "name": "Cold Lock",
+  "nameKo": "차가운 자물쇠",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [],
+  "restriction": "both-sides-empty",
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Universal Damage Boost +25%"
+ },
+ {
+  "id": "combustible-oil",
+  "name": "Combustible Oil",
+  "nameKo": "발화 기름",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": "Greatsword",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Fire Damage +12; Cold Damage -4"
+ },
+ {
+  "id": "companion-token-aiba",
+  "name": "Companion Token 'Aiba'",
+  "nameKo": "Companion Token 'Aiba'",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "companion-token-isaac",
+  "name": "Companion Token 'Isaac'",
+  "nameKo": "Companion Token 'Isaac'",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "companion-token-kenny",
+  "name": "Companion Token 'Kenny'",
+  "nameKo": "Companion Token 'Kenny'",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "companion-token-khakha",
+  "name": "Companion Token 'Khakha'",
+  "nameKo": "Companion Token 'Khakha'",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "companion-token-maru",
+  "name": "Companion Token 'Maru'",
+  "nameKo": "Companion Token 'Maru'",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "companion-token-pillix",
+  "name": "Companion Token 'Pillix'",
+  "nameKo": "Companion Token 'Pillix'",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "companion-token-rolf",
+  "name": "Companion Token 'Rolf'",
+  "nameKo": "Companion Token 'Rolf'",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "companion-token-thunder",
+  "name": "Companion Token 'Thunder'",
+  "nameKo": "Companion Token 'Thunder'",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "compression-bandage",
+  "name": "Compression Bandage",
+  "nameKo": "압박 밴드",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Dash Recovery Speed +80%"
+ },
+ {
+  "id": "counterattack-bracelet",
+  "name": "Counterattack Bracelet",
+  "nameKo": "반격의 팔찌",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Staff",
+  "unique": true,
+  "grimoire": false,
+  "effect": "On Perfect guard, increase Universal Damage Boost by {BASIC_ATTACK_DAMAGE}% for {TIME}s"
+ },
+ {
+  "id": "crabapple-fruit",
+  "name": "Crabapple Fruit",
+  "nameKo": "아그배나무 열매",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Grimoire Haste +14; Dash Recovery Speed +12%"
+ },
+ {
+  "id": "crest-of-the-iron-wall",
+  "name": "Crest of the Iron Wall",
+  "nameKo": "Crest of the Iron Wall",
+  "rarity": "legendary",
+  "maxLevel": 2,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Sword and shield",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage +25%"
+ },
+ {
+  "id": "crimson-sunset",
+  "name": "Crimson Sunset",
+  "nameKo": "물드는 노을 망토",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Solar Blade"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Solar Blade has a 100% chance to grow in size and increase damage by flameSwordLuckBonusDamagePercent% when thrown"
+ },
+ {
+  "id": "crossbow-quiver",
+  "name": "Crossbow Quiver",
+  "nameKo": "석궁 화살통",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Crossbow",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Crossbow Reload Speed +100"
+ },
+ {
+  "id": "crown-of-humility",
+  "name": "Crown of Humility",
+  "nameKo": "겸손의 왕관",
+  "rarity": "legendary",
+  "maxLevel": 4,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "The last hit of the combo deals {DAMAGE}% increased damage"
+ },
+ {
+  "id": "crystal-of-harmony",
+  "name": "Crystal of Harmony",
+  "nameKo": "조화의 수정",
+  "rarity": "legendary",
+  "maxLevel": 1,
+  "categories": [
+   "Mystic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Increase Universal Damage Boost by {DAMAGE}% per Artifact Level within 8 slots"
+ },
+ {
+  "id": "cursed-letter",
+  "name": "Cursed Letter",
+  "nameKo": "저주받은 편지",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Thorns +200%; Attack Speed -4%"
+ },
+ {
+  "id": "dark-planet",
+  "name": "Dark Planet",
+  "nameKo": "암흑 행성",
+  "rarity": "legendary",
+  "maxLevel": 4,
+  "categories": [
+   "Planet"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Summon a dark planet that fires Chaos bullets  [Damage: {DAMAGE}]"
+ },
+ {
+  "id": "devotion-insignia",
+  "name": "Devotion Insignia",
+  "nameKo": "헌신의 휘장",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Companion"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Companion Defense +24; Companion placed in the same Row of the Inventory deal Chaos damage"
+ },
+ {
+  "id": "diamond-badge",
+  "name": "Diamond Badge",
+  "nameKo": "다이아몬드 배지",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage +10%; Cold Damage +6"
+ },
+ {
+  "id": "discarded-golden-ring",
+  "name": "Discarded Golden Ring",
+  "nameKo": "버려진 금반지",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Greatsword",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Special Attack Range {SWEEPRANGE}; Defeat {QUEST} enemies with Special Attack to transform into {REWARD}"
+ },
+ {
+  "id": "dragoncense",
+  "name": "Dragoncense",
+  "nameKo": "용연향",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Fire Damage +10"
+ },
+ {
+  "id": "dried-flower",
+  "name": "Dried Flower",
+  "nameKo": "말라버린 꽃",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Critical Chance +6%; Max MP +6"
+ },
+ {
+  "id": "droplet-of-plitvice",
+  "name": "Droplet of Plitvice",
+  "nameKo": "플리트비체의 물방울",
+  "rarity": "rare",
+  "maxLevel": 0,
+  "categories": [
+   "Frost Relic",
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "droplet-of-plitvice-2",
+  "name": "Droplet of Plitvice",
+  "nameKo": "플리트비체의 물방울",
+  "rarity": "rare",
+  "maxLevel": 0,
+  "categories": [
+   "Frost Relic",
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "When Frost Relic activates, consume +1 MP and increase damage by the amount of increased Max MP"
+ },
+ {
+  "id": "duelist-s-epaulette",
+  "name": "Duelist's Epaulette",
+  "nameKo": "Duelist's Epaulette",
+  "rarity": "advanced",
+  "maxLevel": 0,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Dagger",
+  "unique": true,
+  "grimoire": false,
+  "effect": "On a successful Special Attack: Parry, fires a sword spirit at the nearest enemy dealing Chaos damage equal to {PARRYDAMAGE}% of Highest Elemental Damage; Succeed at Special Attack: Parry {QUEST} times to transform into {REWARD}"
+ },
+ {
+  "id": "dull-bell",
+  "name": "Dull Bell",
+  "nameKo": "무뎌진 방울",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Curse"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "dull-resonance-stone",
+  "name": "Dull Resonance Stone",
+  "nameKo": "Dull Resonance Stone",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Elemental"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Highest Elemental Damage +8"
+ },
+ {
+  "id": "ebony-scale",
+  "name": "Ebony Scale",
+  "nameKo": "검은 비늘",
+  "rarity": "legendary",
+  "maxLevel": 3,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Increases Critical Chance by {CRITICAL}% for every tablet in your inventory; Current number of tablets: {COUNT}"
+ },
+ {
+  "id": "echo-of-the-glacier",
+  "name": "Echo of the Glacier",
+  "nameKo": "빙하의 메아리",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Defense +10"
+ },
+ {
+  "id": "elastic-band",
+  "name": "Elastic Band",
+  "nameKo": "탄성 밴드",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Shadow"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Critical Damage +8%; Evasion +4"
+ },
+ {
+  "id": "electro-chakram",
+  "name": "Electro Chakram",
+  "nameKo": "전격 차크람",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "elrus-naptime-pillow",
+  "name": "Elru’s Naptime Pillow",
+  "nameKo": "Elru’s Naptime Pillow",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "After combat ends, heal {HEAL} HP"
+ },
+ {
+  "id": "empty-hilt",
+  "name": "Empty Hilt",
+  "nameKo": "비어 있는 검 손잡이",
+  "rarity": "legendary",
+  "maxLevel": 5,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Grimoire Damage +30%; Final MP +20%; MP Regeneration +6"
+ },
+ {
+  "id": "endodittes-paperweight",
+  "name": "Endoditte’s Paperweight",
+  "nameKo": "엔도디트의 문진",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "MP Regeneration +9; Max MP +9"
+ },
+ {
+  "id": "enhancement-potion-cap",
+  "name": "Enhancement Potion Cap",
+  "nameKo": "강화 포션 뚜껑",
+  "rarity": "common",
+  "maxLevel": 0,
+  "categories": [
+   "Alchemy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "If HP is at or below {HPRATIO}%, HP Potion Bonus increases by {BONUS}%"
+ },
+ {
+  "id": "eternal-eclipse",
+  "name": "Eternal Eclipse",
+  "nameKo": "영원의 식",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Solar Blade",
+   "Frost Relic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Frost Relic damage +30%; Solar Blade Damage +30%; Solar Blade activates even with Frost Relic attack ; If the item is on the left side of the inventory, the Frost Relic artifact is converted to be based on Fire Damage, and if on the right side, the Solar Blade artifact is converted to be based on Cold Damage; ; "
+ },
+ {
+  "id": "eternal-furnace",
+  "name": "Eternal Furnace",
+  "nameKo": "영원의 화로",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Solar Blade"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Critical Chance +5%"
+ },
+ {
+  "id": "eternal-winter",
+  "name": "Eternal Winter",
+  "nameKo": "영원한 겨울",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Glacier",
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Frostbite has a {PERCENT} chance to be applied an additional time when granted."
+ },
+ {
+  "id": "faded-shield-crest",
+  "name": "Faded Shield Crest",
+  "nameKo": "Faded Shield Crest",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Sword and shield",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage +15%"
+ },
+ {
+  "id": "fairy-jar",
+  "name": "Fairy Jar",
+  "nameKo": "Fairy Jar",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Mystic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Life Orb: Restores 15 HP"
+ },
+ {
+  "id": "faultfinder-needle",
+  "name": "Faultfinder Needle",
+  "nameKo": "결함 탐침봉",
+  "rarity": "rare",
+  "maxLevel": 6,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Critical Chance +21%"
+ },
+ {
+  "id": "feet-of-the-ice-gull",
+  "name": "Feet of the Ice Gull",
+  "nameKo": "얼음갈매기의 발",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Gain the Frozen Touch buff whenever inflicting Frostbite on a target"
+ },
+ {
+  "id": "fire-arrow",
+  "name": "Fire Arrow",
+  "nameKo": "파이어 애로우",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "fire-bolt",
+  "name": "Fire Bolt",
+  "nameKo": "파이어 볼트",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": "Counter: Cast {MAGICNAME} upon successfully blocking {COUNT} times (cooldown: {TIME} seconds)"
+ },
+ {
+  "id": "fire-circus",
+  "name": "Fire Circus",
+  "nameKo": "불 서커스",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "fire-circus-2",
+  "name": "Fire Circus",
+  "nameKo": "불 서커스",
+  "rarity": "common",
+  "maxLevel": 3,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "magic-charm-fire-trigger",
+  "name": "Fire Needle",
+  "nameKo": "Fire Needle",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "firefly",
+  "name": "Firefly",
+  "nameKo": "반딧불이",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "{DAMAGE} Lightning Damage (Deactivated for {TIME} seconds upon hit)"
+ },
+ {
+  "id": "flame-bug",
+  "name": "Flame Bug",
+  "nameKo": "화염충",
+  "rarity": "rare",
+  "maxLevel": 5,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Burn stacks +4"
+ },
+ {
+  "id": "flame-herb-root",
+  "name": "Flame Herb Root",
+  "nameKo": "화염초 뿌리",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": "Dagger",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Max MP +20"
+ },
+ {
+  "id": "flaming-eye-patch",
+  "name": "Flaming Eye Patch",
+  "nameKo": "화염 가리개",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Attack Speed +6%"
+ },
+ {
+  "id": "fluffy-fur-gloves",
+  "name": "Fluffy Fur Gloves",
+  "nameKo": "푹신한 털장갑",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Targets afflicted by Frostbite take an additional {DAMAGEBONUS} damage from Cold Damage (also applies to Companion damage)"
+ },
+ {
+  "id": "flux-coupler-mk-2",
+  "name": "Flux Coupler Mk.2",
+  "nameKo": "플럭스 결합기 Mk.2",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Storm Cloud",
+   "Companion"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Companion Damage +12%"
+ },
+ {
+  "id": "fretted-clay-tablet",
+  "name": "Fretted Clay Tablet",
+  "nameKo": "뇌문 점토판",
+  "rarity": "legendary",
+  "maxLevel": 4,
+  "categories": [
+   "Storm Cloud"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Storm Cloud is not consumed with a 50% chance"
+ },
+ {
+  "id": "frost-dagger",
+  "name": "Frost Dagger",
+  "nameKo": "서리 단검",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "frostium-ring",
+  "name": "Frostium Ring",
+  "nameKo": "프로슘 반지",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "When dealing damage with Weapon Attack or Grimoire, inflict {DAMAGE} {ELEMENTAL} on target (Cooldown {TIME} sec)"
+ },
+ {
+  "id": "frozen-bow",
+  "name": "Frozen Bow",
+  "nameKo": "얼어붙은 활",
+  "rarity": "legendary",
+  "maxLevel": 5,
+  "categories": [
+   "Frost Relic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Fire an arrow at the enemy dealing {ELEMENTALDAMAGE} [Damage: {DAMAGE} ({DEF_DMG}+{ELEMENTALDAMAGE}{PERCENT}%)]; Automatically reloads 1 shot every {RELOADTIME} seconds (up to {MAX})"
+ },
+ {
+  "id": "frozen-egg",
+  "name": "Frozen Egg",
+  "nameKo": "얼어버린 알",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "MP Regeneration +0"
+ },
+ {
+  "id": "frozen-heart",
+  "name": "Frozen Heart",
+  "nameKo": "얼어붙은 심장",
+  "rarity": "rare",
+  "maxLevel": 7,
+  "categories": [
+   "Frost Relic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Frost Relic Charge Speed +100%"
+ },
+ {
+  "id": "garnet-badge",
+  "name": "Garnet Badge",
+  "nameKo": "가넷 배지",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage +10%; Fire Damage +6"
+ },
+ {
+  "id": "giant-telescope",
+  "name": "Giant Telescope",
+  "nameKo": "거대 망원경",
+  "rarity": "rare",
+  "maxLevel": 1,
+  "categories": [
+   "Planet"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Planet Attack Speed +15%; #planet artifact unlocked; Enlarge planets located within 8 slots (Enlarged planets have larger projectiles and deal 50% increased damage); "
+ },
+ {
+  "id": "glass-hammer",
+  "name": "Glass Hammer",
+  "nameKo": "유리 망치",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage +12%; Final HP -12%"
+ },
+ {
+  "id": "glowing-hourglass",
+  "name": "Glowing Hourglass",
+  "nameKo": "빛나는 모래시계",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Increases the Grimoire Haste of the Grimoire in the right slot by {VALUE}"
+ },
+ {
+  "id": "golden-cloak",
+  "name": "Golden Cloak",
+  "nameKo": "금빛 망토",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Dash Count +2; Attack Speed +9%; You can dash one more time."
+ },
+ {
+  "id": "golden-crown-of-arrogance",
+  "name": "Golden Crown of Arrogance",
+  "nameKo": "교만의 금관",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "golden-handbell",
+  "name": "Golden Handbell",
+  "nameKo": "금빛 핸드벨",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Companion"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "golden-maple-leaf",
+  "name": "Golden Maple Leaf",
+  "nameKo": "황금 단풍잎",
+  "rarity": "common",
+  "maxLevel": 0,
+  "categories": [
+   "Negotiation"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Experience Drop +30%"
+ },
+ {
+  "id": "golden-needle-of-the-north",
+  "name": "Golden Needle of the North",
+  "nameKo": "북향의 금빛 침",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Applies only to Artifact that deal direct damage"
+ },
+ {
+  "id": "great-blessing",
+  "name": "Great Blessing",
+  "nameKo": "대축복",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Mystic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "green-gi",
+  "name": "Green Gi",
+  "nameKo": "녹색 도복",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Shadow"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Evasion +5; Move Speed +12%"
+ },
+ {
+  "id": "green-ink-bottle",
+  "name": "Green Ink Bottle",
+  "nameKo": "초록 잉크병",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Curse"
+  ],
+  "restriction": "edge",
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "When you inflict a debuff, there is a {PERCENT} chance to also inflict it on a nearby enemy (Cooldown: {TIME} sec); Barter {NEGO}"
+ },
+ {
+  "id": "green-sawblade",
+  "name": "Green Sawblade",
+  "nameKo": "초록색 톱니",
+  "rarity": "common",
+  "maxLevel": 0,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Each time you use MP MP in combat, receive a {BUFF}% Critical Chance buff (stacks up to {STACK} times and lasts {TIME} seconds)"
+ },
+ {
+  "id": "guillotine-of-bitter-cold",
+  "name": "Guillotine of Bitter Cold",
+  "nameKo": "혹한의 길로틴",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Frost Relic",
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Every {TIME}s, summons {BLADEELEMENTAL} blades on up to {TARGETS} nearby enemies. Dealing Electrocution damage reduces the cooldown by {REDUCETIME}s; Damage : {PERCENT}% of (the higher of Lightning Damage and {ELEMENTALDAMAGE} + guillotineLowElementalDamageRatio% of the lower)"
+ },
+ {
+  "id": "hand-mirror",
+  "name": "Hand Mirror",
+  "nameKo": "손 거울",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Guardian"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Defense +9"
+ },
+ {
+  "id": "haste",
+  "name": "Haste",
+  "nameKo": "헤이스트",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "healing-stream",
+  "name": "Healing Stream",
+  "nameKo": "Healing Stream",
+  "rarity": "advanced",
+  "maxLevel": 0,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": "The consumed MP is permanently Reserve"
+ },
+ {
+  "id": "heart-shaped-carrot",
+  "name": "Heart-Shaped Carrot",
+  "nameKo": "하트모양 당근",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "heavy-heart",
+  "name": "Heavy Heart",
+  "nameKo": "마음의 짐",
+  "rarity": "common",
+  "maxLevel": 0,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "heitas-spirit-powder",
+  "name": "Heita’s Spirit Powder",
+  "nameKo": "헤이타의 영혼 가루",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Companion",
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Summons a jellyfish that fires Ice projectiles"
+ },
+ {
+  "id": "helenas-model-stairway",
+  "name": "Helena’s Model Stairway",
+  "nameKo": "헬레나의 계단 모형",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "hiring-crest-collin",
+  "name": "Hiring Crest “Collin”",
+  "nameKo": "고용 문장 '콜린'",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Companion"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Recruits an NPC as a companion"
+ },
+ {
+  "id": "hoop-rolling-stick",
+  "name": "Hoop-Rolling Stick",
+  "nameKo": "Hoop-Rolling Stick",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "This effect resets on Normal Attack hit"
+ },
+ {
+  "id": "ice-bolt",
+  "name": "Ice Bolt",
+  "nameKo": "아이스 볼트",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "ice-bug",
+  "name": "Ice Bug",
+  "nameKo": "빙결충",
+  "rarity": "rare",
+  "maxLevel": 5,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Freeze Debuff Damage 50%"
+ },
+ {
+  "id": "magic-charm-ice-trigger",
+  "name": "Ice Needle",
+  "nameKo": "Ice Needle",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "ice-star",
+  "name": "Ice Star",
+  "nameKo": "아이스 스타",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Frost Relic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Additional activation of Frost Relic 1 times; Frost Relic damage -10%; Luck +2"
+ },
+ {
+  "id": "ice-vine",
+  "name": "Ice Vine",
+  "nameKo": "빙설덩굴",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "When thorns hit an enemy, inflict Frostbite"
+ },
+ {
+  "id": "ice-wings",
+  "name": "Ice Wings",
+  "nameKo": "얼음 날개",
+  "rarity": "legendary",
+  "maxLevel": 6,
+  "categories": [
+   "Frost Relic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Additional activation of Frost Relic 2 times; Frost Relic damage -20%; Critical Damage +20%"
+ },
+ {
+  "id": "icebound-tejas",
+  "name": "Icebound Tejas",
+  "nameKo": "봉인된 테자스",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Ember",
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Burn changes to Blue Burn ; Burn Damage +15%"
+ },
+ {
+  "id": "impact-amplifier",
+  "name": "Impact Amplifier",
+  "nameKo": "충격 증폭기",
+  "rarity": "legendary",
+  "maxLevel": 14,
+  "categories": [
+   "Mystic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "True Damage +14"
+ },
+ {
+  "id": "jeweled-armor",
+  "name": "Jeweled Armor",
+  "nameKo": "보석 갑옷",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Grimoire Critical Chance +30%; MP Regeneration +8; Physical Damage -7"
+ },
+ {
+  "id": "jolow-s-watering-can",
+  "name": "Jolow's Watering Can",
+  "nameKo": "조로우의 물뿌리개",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Lake",
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Grimoire Damage +15%"
+ },
+ {
+  "id": "judgment-of-thunder",
+  "name": "Judgment of Thunder",
+  "nameKo": "천둥의 심판",
+  "rarity": "legendary",
+  "maxLevel": 4,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "kaleidoscope",
+  "name": "Kaleidoscope",
+  "nameKo": "만화경",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Extra damage to target’s Super Armor +55%"
+ },
+ {
+  "id": "keel-fragment",
+  "name": "Keel Fragment",
+  "nameKo": "용골 파편",
+  "rarity": "common",
+  "maxLevel": 3,
+  "categories": [
+   "Mystic"
+  ],
+  "restriction": "edge",
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Max HP HP"
+ },
+ {
+  "id": "kirin-s-horn",
+  "name": "Kirin's Horn",
+  "nameKo": "기린의 뿔",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Cold Damage -6"
+ },
+ {
+  "id": "kritons-seal",
+  "name": "Kriton’s Seal",
+  "nameKo": "크리톤의 인장",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Negotiation"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Increases Leaf gain by {RATE}%"
+ },
+ {
+  "id": "kunai",
+  "name": "Kunai",
+  "nameKo": "쿠나이",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Normal attacks have a {CHANCE}% chance to fire a kunai [Damage: {DAMAGE} ({DEF_DMG}+Critical Damage{DMG}%)]; Damage: {DEF_DMG}+Critical Damage{DMG}%"
+ },
+ {
+  "id": "lantern",
+  "name": "Lantern",
+  "nameKo": "Lantern",
+  "rarity": "common",
+  "maxLevel": 0,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "When you can't see ahead, it slightly illuminates the surroundings."
+ },
+ {
+  "id": "leaf-bird-leather",
+  "name": "Leaf Bird Leather",
+  "nameKo": "잎새 가죽",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Storm Cloud"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Extra Storm Cloud damage +4%; "
+ },
+ {
+  "id": "library-minute-hand-miniature",
+  "name": "Library Minute Hand Miniature",
+  "nameKo": "도서관 분침 미니어처",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": "Dagger",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Invincibility Duration During Special Attack: Fury +0.5s"
+ },
+ {
+  "id": "lightning-arrow",
+  "name": "Lightning Bolt",
+  "nameKo": "라이트닝 볼트",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "lightning-boomerang",
+  "name": "Lightning Boomerang",
+  "nameKo": "번개 부메랑",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "magic-charm-lightning",
+  "name": "Lightning Needle",
+  "nameKo": "Lightning Needle",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "lightning-rod",
+  "name": "Lightning Rod",
+  "nameKo": "피뢰침",
+  "rarity": "legendary",
+  "maxLevel": 4,
+  "categories": [
+   "Storm Cloud"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Storm Cloud Capacity +40; Storm Cloud Recovery Rate during Combat +24%; Lightning Damage +8"
+ },
+ {
+  "id": "lightning-stone",
+  "name": "Lightning Stone",
+  "nameKo": "번갯돌",
+  "rarity": "rare",
+  "maxLevel": 6,
+  "categories": [
+   "Storm Cloud"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Extra Storm Cloud damage +60%"
+ },
+ {
+  "id": "lightning-struck-branch",
+  "name": "Lightning-Struck Branch",
+  "nameKo": "번개 맞은 나뭇가지",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "When using Weapon Attack, grants Electrocution with a {CHANCE}% chance (cooldown of {TIME} seconds)"
+ },
+ {
+  "id": "lizard-plate-armor",
+  "name": "Lizard Plate Armor",
+  "nameKo": "도마뱀 판금 갑옷",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Guardian"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Defense +24; Move Speed -10%; Attack Speed -10%; Grimoire Haste -10"
+ },
+ {
+  "id": "log",
+  "name": "Log",
+  "nameKo": "Log",
+  "rarity": "common",
+  "maxLevel": 0,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "lucky-medal",
+  "name": "Lucky Medal",
+  "nameKo": "행운의 메달",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Negotiation"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Barter +10"
+ },
+ {
+  "id": "lunch-box",
+  "name": "Lunch Box",
+  "nameKo": "도시락",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Life Steal +2"
+ },
+ {
+  "id": "mage-s-coin",
+  "name": "Mage's Coin",
+  "nameKo": "마법사의 동전",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Grimoire Haste +65"
+ },
+ {
+  "id": "magic-bucket",
+  "name": "Magic Bucket",
+  "nameKo": "Magic Bucket",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "magic-bucket-full-of-water",
+  "name": "Magic Bucket Full of Water",
+  "nameKo": "Magic Bucket Full of Water",
+  "rarity": "common",
+  "maxLevel": 0,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "magic-carrot",
+  "name": "Magic Carrot",
+  "nameKo": "마법 당근",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Elemental"
+  ],
+  "restriction": "top",
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Highest Elemental Damage +8; Move Speed +10%; Bonus AP AP when casting a spell within 4 slots"
+ },
+ {
+  "id": "magic-glasses",
+  "name": "Magic Glasses",
+  "nameKo": "마법의 안경",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Shadow"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Evasion +12; Max MP +30"
+ },
+ {
+  "id": "magic-mp",
+  "name": "Magic MP",
+  "nameKo": "조로우의 물뿌리개",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Academy",
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Increases damage by 10% for every 10 MP consumed by Grimoire"
+ },
+ {
+  "id": "magma-bead",
+  "name": "Magma Bead",
+  "nameKo": "마그마 구슬",
+  "rarity": "legendary",
+  "maxLevel": 3,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Grants Burn 2 additional times; Burn stacks +2"
+ },
+ {
+  "id": "master-s-tsuba",
+  "name": "Master's Tsuba",
+  "nameKo": "Master's Tsuba",
+  "rarity": "legendary",
+  "maxLevel": 2,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Katana",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage +15%"
+ },
+ {
+  "id": "meditation-book",
+  "name": "Meditation Book",
+  "nameKo": "명상 서적",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Instantly cast all Grimoire without action ; Grimoire Damage +14%"
+ },
+ {
+  "id": "meteor-shower",
+  "name": "Meteor Shower",
+  "nameKo": "메테오 샤워",
+  "rarity": "legendary",
+  "maxLevel": 3,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "meteorite-earrings",
+  "name": "Meteorite Earrings",
+  "nameKo": "운철 귀걸이",
+  "rarity": "legendary",
+  "maxLevel": 2,
+  "categories": [
+   "Solar Blade"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Solar Blade Damage +15%; Fire Damage +7; Solar Blade Falls near you when thrown"
+ },
+ {
+  "id": "meteorite-pauldrons",
+  "name": "Meteorite Pauldrons",
+  "nameKo": "운철 어깨 장식",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Solar Blade"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Retrieve all Solar Blade that have fallen to the ground, dealing Solar Blade damage to enemies in the path"
+ },
+ {
+  "id": "mini-ballista",
+  "name": "Mini Ballista",
+  "nameKo": "미니 발리스타",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Companion",
+   "Storm Cloud"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Gain Storm Cloud with a {PERCENT}% chance when a lightning arrow hits an enemy."
+ },
+ {
+  "id": "mining-supervisor-armband",
+  "name": "Mining Supervisor Armband",
+  "nameKo": "채굴 작업 총괄 완장",
+  "rarity": "legendary",
+  "maxLevel": 4,
+  "categories": [
+   "Companion"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Summon Mole Chief"
+ },
+ {
+  "id": "model-beak",
+  "name": "Model Beak",
+  "nameKo": "모형 부리",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Shadow"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Physical Damage +8; Evasion +6"
+ },
+ {
+  "id": "model-mast",
+  "name": "Model Mast",
+  "nameKo": "돛대 모형",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Storm Cloud"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Consumption Speed of Storm Cloud +60%"
+ },
+ {
+  "id": "mouse-mages-pendant",
+  "name": "Mouse Mage’s Pendant",
+  "nameKo": "쥐 마법사의 펜던트",
+  "rarity": "advanced",
+  "maxLevel": 1,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Bolt Magic homes in on enemies ; MP Regeneration +5"
+ },
+ {
+  "id": "multicolored-candy-glass-jar",
+  "name": "Multicolored Candy Glass Jar",
+  "nameKo": "오색사탕 유리병",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Elemental"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "multipurpose-belt",
+  "name": "Multipurpose Belt",
+  "nameKo": "다용도 벨트",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Mystic"
+  ],
+  "restriction": "bottom",
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "mystical-pendulum",
+  "name": "Mystical Pendulum",
+  "nameKo": "신비한 무게 추",
+  "rarity": "legendary",
+  "maxLevel": 4,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Normal Attack Damage +50%; Attack Speed -10%"
+ },
+ {
+  "id": "neutralizer-noir",
+  "name": "Neutralizer Noir",
+  "nameKo": "중화제 흑",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Curse"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Damage dealt with Debuff +16%; Critical Chance -6%"
+ },
+ {
+  "id": "oak-tree-coal",
+  "name": "Oak Tree Coal",
+  "nameKo": "신갈나무 숯",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Attack Speed of Burn +90%"
+ },
+ {
+  "id": "ohia-lehua",
+  "name": "Ohia Lehua",
+  "nameKo": "오히아 레후아",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "oink-shamans-necklace",
+  "name": "Oink Shaman’s Necklace",
+  "nameKo": "오잉크 주술사의 목걸이",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Curse"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Duration of all debuffs inflicted on enemies +100%"
+ },
+ {
+  "id": "orb-of-yearning",
+  "name": "Orb of Yearning",
+  "nameKo": "갈망의 보주",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Reserve {RES} MP, increasing Grimoire damage dealt by {PERCENT}%"
+ },
+ {
+  "id": "pallass-cards",
+  "name": "Pallas’s Cards",
+  "nameKo": "팔라스의 카드",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Normal attacks have a {DEFAULT}% chance to fire a card; For every 1 Luck, the chance to fire a card increases by {CHANCE} (Current: {CURRENT}) [Damage: {DAMAGE}]"
+ },
+ {
+  "id": "pan-lid",
+  "name": "Pan Lid",
+  "nameKo": "냄비 뚜껑",
+  "rarity": "rare",
+  "maxLevel": 5,
+  "categories": [
+   "Guardian"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "MP Regeneration +15; Evasion +6; Gain the Endure buff with each physical critical hit on an enemy (Increases defense by 3 for 6 seconds, up to 3 stacks)"
+ },
+ {
+  "id": "pearl-dust",
+  "name": "Pearl Dust",
+  "nameKo": "진주 가루",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Grimoire Damage +12%"
+ },
+ {
+  "id": "phoenix-wing",
+  "name": "Phoenix Wing",
+  "nameKo": "봉황의 날개깃",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Fire Damage +5"
+ },
+ {
+  "id": "pinwheel",
+  "name": "Pinwheel",
+  "nameKo": "바람개비",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Wind Song",
+   "Shadow"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Attack Speed +9%; Evasion +6"
+ },
+ {
+  "id": "planet-comet",
+  "name": "Planet Comet",
+  "nameKo": "Planet Comet",
+  "rarity": "advanced",
+  "maxLevel": 0,
+  "categories": [
+   "Planet"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "plasma-helmet",
+  "name": "Plasma Helmet",
+  "nameKo": "플라즈마 헬맷",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Ember",
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Burn and Electrocution change to Plasma ; Plasma Damage +5%"
+ },
+ {
+  "id": "pointed-club",
+  "name": "Pointed Club",
+  "nameKo": "뾰족한 방망이",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Critical Damage +60%"
+ },
+ {
+  "id": "pouch-of-black-tea",
+  "name": "Pouch of Black Tea",
+  "nameKo": "홍차 잎 주머니",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Current stacks: {CURRENT}; Damage taken from Mini Boss {RECEIVE}"
+ },
+ {
+  "id": "processed-wood",
+  "name": "Processed Wood",
+  "nameKo": "Processed Wood",
+  "rarity": "common",
+  "maxLevel": 0,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "protection-of-nature",
+  "name": "Protection of Nature",
+  "nameKo": "Protection of Nature",
+  "rarity": "legendary",
+  "maxLevel": 0,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Activate MP Shield for {TIME} seconds on use"
+ },
+ {
+  "id": "radiating-charm",
+  "name": "Radiating Charm",
+  "nameKo": "형광 부적",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Sword and shield",
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "rain-of-arrows",
+  "name": "Rain of Arrows",
+  "nameKo": "애로우 레인",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": true,
+  "effect": ""
+ },
+ {
+  "id": "rainbow-feather",
+  "name": "Rainbow Feather",
+  "nameKo": "무지갯빛 깃털",
+  "rarity": "legendary",
+  "maxLevel": 2,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": "Dagger",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Get additional 1 when acquiring Trance; Special Attack Damage +22%; Dash Recovery Speed +10%"
+ },
+ {
+  "id": "rays-star-fragment",
+  "name": "Ray’s Star Fragment",
+  "nameKo": "레이에 별조각",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "red-mist",
+  "name": "Red Mist",
+  "nameKo": "붉은 이슬",
+  "rarity": "common",
+  "maxLevel": 3,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "On critical hit, deal damage to nearby enemies equal to {PERCENT}% of the highest attribute value"
+ },
+ {
+  "id": "red-mushroom",
+  "name": "Red Mushroom",
+  "nameKo": "빨간 버섯",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "red-planet",
+  "name": "Red Planet",
+  "nameKo": "붉은 행성",
+  "rarity": "advanced",
+  "maxLevel": 6,
+  "categories": [
+   "Planet"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Summons Red Planet that fires Fire missiles\n[Damage: {DAMAGE}]; Charges in {TIME} seconds, activates on dash; When activated, creates {COUNT} homing missiles\n(Deals {DAMAGE}% Fire Damage)"
+ },
+ {
+  "id": "red-planet-observation-log",
+  "name": "Red Planet Observation Log",
+  "nameKo": "붉은행성 관찰일지",
+  "rarity": "rare",
+  "maxLevel": 0,
+  "categories": [
+   "Ember",
+   "Planet"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "On Planet Attack hit, damage increases in proportion to Burn tick damage\nThe higher the Artifact grade, the greater the increase\n- Common: Burn 1-tick damage\n- Advanced : Burn 2-tick damage\n- Rare : Burn 3-tick damage\n- Legendary : Burn 4-tick damage"
+ },
+ {
+  "id": "red-snake-eyes",
+  "name": "Red Snake Eyes",
+  "nameKo": "붉은 뱀의 눈",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Successful blocks deal {FIRE} fire damage to the attacker"
+ },
+ {
+  "id": "reloading-wooden-crate",
+  "name": "Reloading Wooden Crate",
+  "nameKo": "재장전용 나무 상자",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Crossbow",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Magazine Count +2"
+ },
+ {
+  "id": "resonance-stone",
+  "name": "Resonance Stone",
+  "nameKo": "Resonance Stone",
+  "rarity": "legendary",
+  "maxLevel": 3,
+  "categories": [
+   "Elemental"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Highest Elemental Damage +14"
+ },
+ {
+  "id": "riposte-blade-fragment",
+  "name": "Riposte Blade Fragment",
+  "nameKo": "리포스테 검 조각",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Sword and shield",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Counter: Perform a short melee attack forward when blocking ({DAMAGERATIO}% of physical damage)"
+ },
+ {
+  "id": "riposte-staff-fragment",
+  "name": "Riposte Staff Fragment",
+  "nameKo": "리포스테 봉 파편",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Staff",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Counter: Perform a short melee attack forward when blocking ({DAMAGERATIO}% of physical damage)"
+ },
+ {
+  "id": "rock-elephant",
+  "name": "Rock Elephant",
+  "nameKo": "바위코끼리",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Guardian",
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Fire {COUNT} rock spears that deal damage equal to {PERCENT}% of Defense; Additional Rock Spear count per extra Attack Speed {ATKSPEED}%"
+ },
+ {
+  "id": "rock-oink",
+  "name": "Rock Oink",
+  "nameKo": "Rock Oink",
+  "rarity": "common",
+  "maxLevel": 0,
+  "categories": [
+   "Companion"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "ruby-brooch",
+  "name": "Ruby Brooch",
+  "nameKo": "루비 브로치",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Storm Cloud",
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Lightning Damage +10; Fire Damage +10; Inflicts Burn on enemies struck by Storm Cloud"
+ },
+ {
+  "id": "rusty-tsuba",
+  "name": "Rusty Tsuba",
+  "nameKo": "Rusty Tsuba",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Katana",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage +6%"
+ },
+ {
+  "id": "rylies-pocket-watch",
+  "name": "Rylie’s Pocket Watch",
+  "nameKo": "라일리의 회중시계",
+  "rarity": "legendary",
+  "maxLevel": 2,
+  "categories": [
+   "Academy"
+  ],
+  "restriction": "bottom",
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Grimoire Haste +80; Critical Damage +20%; Reduce MP Cost of noicon +10%"
+ },
+ {
+  "id": "sapote-fruit",
+  "name": "Sapote Fruit",
+  "nameKo": "사포테 열매",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Storm Cloud"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Storm Cloud Capacity +20; MP Regeneration +5"
+ },
+ {
+  "id": "scabbard-of-exorcism",
+  "name": "Scabbard of Exorcism",
+  "nameKo": "축사의 검집",
+  "rarity": "advanced",
+  "maxLevel": 6,
+  "categories": [
+   "Frost Relic"
+  ],
+  "restriction": "edge",
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "scale-of-conflict",
+  "name": "Scale of Conflict",
+  "nameKo": "대립의 천칭",
+  "rarity": "rare",
+  "maxLevel": 5,
+  "categories": [
+   "Ember",
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Grants Fire to the left side of inventory, and Ice to the right"
+ },
+ {
+  "id": "scrap-of-red-cloth",
+  "name": "Scrap of Red Cloth",
+  "nameKo": "붉은 천 조각",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Curse"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "When dealing damage to an enemy, deal an additional {DAMAGE}% damage for each debuff applied to the target"
+ },
+ {
+  "id": "scythe-of-berut",
+  "name": "Scythe of Berut",
+  "nameKo": "베루트의 낫",
+  "rarity": "legendary",
+  "maxLevel": 3,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Critical Chance +10%; Triggers Execution by the amount Critical Chance exceeds 100%"
+ },
+ {
+  "id": "serens-rushed-letter",
+  "name": "Seren’s Rushed Letter",
+  "nameKo": "세렌의 휘갈긴 편지",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Guardian"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Each time you use 40 MP in combat, gain a Shield with {VALUE} hit points (lasts for {TIME} seconds)"
+ },
+ {
+  "id": "sharp-acorn",
+  "name": "Sharp Acorn",
+  "nameKo": "뾰족 도토리",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Storm Cloud"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Storm Cloud Recovery Rate during Combat +12%; Evasion +6"
+ },
+ {
+  "id": "sharp-eye",
+  "name": "Sharp Eye",
+  "nameKo": "샤프 아이",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "sharp-flint",
+  "name": "Sharp Flint",
+  "nameKo": "뾰족 부싯돌",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Elemental"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Critical Chance +8%; Highest Elemental Damage +4"
+ },
+ {
+  "id": "sheet-music-galaxy",
+  "name": "Sheet Music 'Galaxy'",
+  "nameKo": "악보 '은하'",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Planet",
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Attack Speed +12%; Each Weapon Attack speeds up the attack cycle of planets"
+ },
+ {
+  "id": "sheet-music-the-typhoon",
+  "name": "Sheet Music 'The Typhoon'",
+  "nameKo": "악보 '폭풍'",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Storm Cloud",
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Attack Speed +12%"
+ },
+ {
+  "id": "shield",
+  "name": "Shield",
+  "nameKo": "보호막",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [
+   "Guardian"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "shield-bag",
+  "name": "Shield Bag",
+  "nameKo": "방패 가방",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Academy",
+   "Guardian"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Increases block radius by {RANGE}%"
+ },
+ {
+  "id": "shield-earrings",
+  "name": "Shield Earrings",
+  "nameKo": "방패 귀고리",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Guardian"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Max HP +20; Evasion -2"
+ },
+ {
+  "id": "shield-training-manual",
+  "name": "Shield Training Manual",
+  "nameKo": "방패술 교본",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Special Attack Damage +8%"
+ },
+ {
+  "id": "shieldmate",
+  "name": "Shieldmate",
+  "nameKo": "실드 메이트",
+  "rarity": "legendary",
+  "maxLevel": 6,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Sword and shield",
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage +20%; Attack Speed +0%"
+ },
+ {
+  "id": "shimmering-eye",
+  "name": "Shimmering Eye",
+  "nameKo": "일렁이는 눈",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Precision",
+   "Shadow"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Gain a 'Mirage' stack on critical hits. At 100% Mirage, automatically evade the next attack and deal Evasion {STAT}% Chaos damage to surrounding enemies."
+ },
+ {
+  "id": "silver-bracelet",
+  "name": "Silver Bracelet",
+  "nameKo": "은팔찌",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Attack Speed +16%; Move Speed -10%"
+ },
+ {
+  "id": "silver-plate",
+  "name": "Silver Plate",
+  "nameKo": "은접시",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": "bottom",
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Normal Attack Damage +10%; Special Attack Damage +10%"
+ },
+ {
+  "id": "simple-contract",
+  "name": "Simple Contract",
+  "nameKo": "간이 계약서",
+  "rarity": "common",
+  "maxLevel": 4,
+  "categories": [
+   "Companion"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Companion Max HP HP%"
+ },
+ {
+  "id": "six-leaf-clover",
+  "name": "Six-leaf Clover",
+  "nameKo": "여섯 잎 클로버",
+  "rarity": "legendary",
+  "maxLevel": 3,
+  "categories": [
+   "Shadow"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Evasion +12; Luck +12; Critical Chance +8%; True Damage +2"
+ },
+ {
+  "id": "sky-blue-planet",
+  "name": "Sky Blue Planet",
+  "nameKo": "하늘색 행성",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Planet"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Summons a sky blue planet that shoots Lightning laser beams\n[Damage: {DAMAGE}]"
+ },
+ {
+  "id": "slim-cushion",
+  "name": "Slim Cushion",
+  "nameKo": "얇은 방석",
+  "rarity": "rare",
+  "maxLevel": 6,
+  "categories": [
+   "Companion"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Companion Revive Time Haste +50%"
+ },
+ {
+  "id": "smoke-screen",
+  "name": "Smoke Screen",
+  "nameKo": "연막",
+  "rarity": "common",
+  "maxLevel": 0,
+  "categories": [
+   "Shadow"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "snow-mountain-long-eared-bat",
+  "name": "Snow Mountain Long-eared Bat",
+  "nameKo": "설산 큰귀박쥐",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Glacier",
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Attack Speed +10%"
+ },
+ {
+  "id": "snowflake-necklace",
+  "name": "Snowflake Necklace",
+  "nameKo": "눈 결정 목걸이",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Cold Damage +5; Move Speed +5%"
+ },
+ {
+  "id": "solis-decussa",
+  "name": "Solis Decussa",
+  "nameKo": "솔리스 데쿠사",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Solar Blade"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Solar Blade Damage +20%; Critical Damage +16%"
+ },
+ {
+  "id": "solis-dekri",
+  "name": "Solis Dekri",
+  "nameKo": "솔리스 데크리",
+  "rarity": "legendary",
+  "maxLevel": 6,
+  "categories": [
+   "Solar Blade"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Ignore target's defense by +14% with Solar Blade; Critical Chance of Solar Blade +50%"
+ },
+ {
+  "id": "solis-fracto",
+  "name": "Solis Fracto",
+  "nameKo": "솔리스 프라투",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Solar Blade"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Fire Damage +5; Max HP +6"
+ },
+ {
+  "id": "solis-parvo",
+  "name": "Solis Parvo",
+  "nameKo": "솔리스 파르보",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Solar Blade"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Solar Blade Maximum Count +3; Move Speed +8%"
+ },
+ {
+  "id": "spiny-shell",
+  "name": "Spiny Shell",
+  "nameKo": "가시 등껍질",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Guardian"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Thorns +450%; Defense +3"
+ },
+ {
+  "id": "standards-of-magic",
+  "name": "Standards of Magic",
+  "nameKo": "마법의 정석",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Elemental"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Highest Elemental Damage +10; Grimoire Damage +15%; AP AP"
+ },
+ {
+  "id": "star-aquamarine",
+  "name": "Star Aquamarine",
+  "nameKo": "스타 아쿠아마린",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Final MP +60%"
+ },
+ {
+  "id": "star-ruby",
+  "name": "Star Ruby",
+  "nameKo": "스타 루비",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Final HP +60%"
+ },
+ {
+  "id": "stone-flower",
+  "name": "Stone Flower",
+  "nameKo": "석화",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [
+   "Storm Cloud"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Lightning Damage +6; Critical Damage +6%; "
+ },
+ {
+  "id": "stone-spindle-whorl",
+  "name": "Stone Spindle Whorl",
+  "nameKo": "돌 가락바퀴",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Damage of abilities consuming MP +30%"
+ },
+ {
+  "id": "stone-wave",
+  "name": "Stone Wave",
+  "nameKo": "Stone Wave",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "straw-doll",
+  "name": "Straw Doll",
+  "nameKo": "지푸라기 인형",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "MP Regeneration +9; Critical Damage +5%"
+ },
+ {
+  "id": "sun-of-the-archives",
+  "name": "Sun of the Archives",
+  "nameKo": "서고의 태양",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Academy",
+   "Solar Blade"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Each 1% of Grimoire Damage increases Solar Blade damage by 1%; When dealing noicon damage, additionally activates Solar Blade 0 times"
+ },
+ {
+  "id": "sword-earrings",
+  "name": "Sword Earrings",
+  "nameKo": "검 귀고리",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Critical Damage +33%; Max MP -7"
+ },
+ {
+  "id": "sword-training-manual",
+  "name": "Sword Training Manual",
+  "nameKo": "검술 교본",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": "top",
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "tactical-manual",
+  "name": "Tactical Manual",
+  "nameKo": "전술 지침서",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Companion",
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Player Critical Chance and Critical Damage contribute +120% to Companion; Critical Chance +8%"
+ },
+ {
+  "id": "tainted-bandage",
+  "name": "Tainted Bandage",
+  "nameKo": "부정한 붕대",
+  "rarity": "common",
+  "maxLevel": 3,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Critical Chance +9%; Physical Damage +3"
+ },
+ {
+  "id": "teros-spirit-powder",
+  "name": "Tero’s Spirit Powder",
+  "nameKo": "테로의 영혼 가루",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Companion",
+   "Ember"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Summons a jellyfish that fires Fire projectiles"
+ },
+ {
+  "id": "thorn-bush",
+  "name": "Thorn Bush",
+  "nameKo": "가시덤불",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": "inside",
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Increase push force on Weapon Attack."
+ },
+ {
+  "id": "thorn-charm",
+  "name": "Thorn Charm",
+  "nameKo": "가시 부적",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Critical Chance +10%; Physical Damage +3"
+ },
+ {
+  "id": "thrust-manual",
+  "name": "Thrust Manual",
+  "nameKo": "찌르기 교본",
+  "rarity": "advanced",
+  "maxLevel": 0,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Katana",
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "thunder-armor",
+  "name": "Thunder Armor",
+  "nameKo": "천둥 갑옷",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "thunder-s-earring",
+  "name": "Thunder's Earring",
+  "nameKo": "썬더의 귀걸이",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Lightning Damage +6"
+ },
+ {
+  "id": "thunderfrost-butterfly",
+  "name": "Thunderfrost Butterfly",
+  "nameKo": "얼음구름 나비",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Storm Cloud",
+   "Glacier"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Storm Cloud changes to Snowstorm Cloud; Cold Damage +2; Consumption Speed of Storm Cloud +6%"
+ },
+ {
+  "id": "thunderous-steps",
+  "name": "Thunderous Steps",
+  "nameKo": "Thunderous Steps",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "thunderstorm-tracking-compass",
+  "name": "Thunderstorm Tracking Compass",
+  "nameKo": "뇌운추적 나침반",
+  "rarity": "legendary",
+  "maxLevel": 3,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "When Electrocution is applied, apply Enhanced Electrocution with a 60% chance; Lightning Damage +8"
+ },
+ {
+  "id": "tiny-magic-conch",
+  "name": "Tiny Magic Conch",
+  "nameKo": "작은 마법 고둥",
+  "rarity": "advanced",
+  "maxLevel": 2,
+  "categories": [
+   "Frost Relic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Frost Relic damage +10%; Critical Damage +12%"
+ },
+ {
+  "id": "tome-of-transmutation-fire",
+  "name": "Tome of Transmutation - Fire",
+  "nameKo": "변환의 서: 화염",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Additional Physical Damage becomes 0, and that 100% is converted to Fire Damage"
+ },
+ {
+  "id": "tome-of-transmutation-ice",
+  "name": "Tome of Transmutation - Ice",
+  "nameKo": "변환의 서: 얼음",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Additional Physical Damage becomes 0, and that 100% is converted to Cold Damage"
+ },
+ {
+  "id": "tome-of-transmutation-lightning",
+  "name": "Tome of Transmutation - Lightning",
+  "nameKo": "변환의 서: 번개",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Additional Physical Damage becomes 0, and that 100% is converted to Lightning Damage"
+ },
+ {
+  "id": "topaz-badge",
+  "name": "Topaz Badge",
+  "nameKo": "토파즈 배지",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage +10%; Lightning Damage +6"
+ },
+ {
+  "id": "toxic-spore-pouch",
+  "name": "Toxic Spore Pouch",
+  "nameKo": "맹독 포자 주머니",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Bonus damage dealt to Boss and Mini Boss +10%; Upon a successful Special Attack: Parry, inflicts Chaos damage to the attacker"
+ },
+ {
+  "id": "trainee-duelist-s-epaulette",
+  "name": "Trainee Duelist's Epaulette",
+  "nameKo": "Trainee Duelist's Epaulette",
+  "rarity": "common",
+  "maxLevel": 0,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": "Dagger",
+  "unique": true,
+  "grimoire": false,
+  "effect": "On a successful Special Attack: Parry, fires a sword spirit at the nearest enemy dealing Chaos damage equal to {PARRYDAMAGE}% of Highest Elemental Damage; Succeed at Special Attack: Parry {QUEST} times to transform into {REWARD}"
+ },
+ {
+  "id": "traveler-s-blessing",
+  "name": "Traveler's Blessing",
+  "nameKo": "나그네의 축복",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Alchemy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Weapon Damage +12%; Grimoire Damage +12%; True Damage +2; Move Speed +9%"
+ },
+ {
+  "id": "tuning-fork",
+  "name": "Tuning Fork",
+  "nameKo": "소리굽쇠",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Academy",
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Consume all stacks with Weapon Attack to deal Chaos damage at the attack point (considered as Grimoire damage)"
+ },
+ {
+  "id": "valters-work-monocle",
+  "name": "Valter’s Work Monocle",
+  "nameKo": "발터의 작업용 단안경",
+  "rarity": "legendary",
+  "maxLevel": 4,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Critical Chance +45%"
+ },
+ {
+  "id": "vital-touch",
+  "name": "Vital Touch",
+  "nameKo": "생명의 손길",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Final HP -33%"
+ },
+ {
+  "id": "voluspa",
+  "name": "Voluspa",
+  "nameKo": "볼루스파",
+  "rarity": "rare",
+  "maxLevel": 5,
+  "categories": [
+   "Frost Relic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "{ELEMENTAL} spear flies in and attacks enemies {COUNT} times\n[Damage: {DAMAGE} ({DEF_DMG}+{ELEMENTALDAMAGE}{ICE_DMG}%)]"
+ },
+ {
+  "id": "wanderer-s-necklace",
+  "name": "Wanderer's Necklace",
+  "nameKo": "유랑자의 목걸이",
+  "rarity": "rare",
+  "maxLevel": 2,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Attack Speed +18%; Highest Elemental Damage +6"
+ },
+ {
+  "id": "warm-stone",
+  "name": "Warm Stone",
+  "nameKo": "따뜻한 돌",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Precision"
+  ],
+  "restriction": "inside",
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Critical Damage {CRITICAL_DAMAGE}%"
+ },
+ {
+  "id": "warning-letter",
+  "name": "Warning Letter",
+  "nameKo": "경고 문서",
+  "rarity": "rare",
+  "maxLevel": 1,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Move Speed +8%"
+ },
+ {
+  "id": "warrior-seal",
+  "name": "Warrior Seal",
+  "nameKo": "전사의 증표",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Physical Damage +13; Attack Speed +15%"
+ },
+ {
+  "id": "water-bag",
+  "name": "Water Bag",
+  "nameKo": "물주머니",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Increases Max MP by 1 every time you use MP (up to MP, cooldown: 5 seconds)"
+ },
+ {
+  "id": "water-bolt",
+  "name": "Water Bolt",
+  "nameKo": "Water Bolt",
+  "rarity": "common",
+  "maxLevel": 1,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "water-spirit",
+  "name": "Water Spirit",
+  "nameKo": "물의 정령",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Lake",
+   "Precision"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Cast 'Water Grab' at the targeted location using Max MP {MP_PERCENT}%\n[Damage: Max MP × {DAMAGE_PERCENT}]; Amplify this attack's Critical Damage {CRITDMG_AMP}"
+ },
+ {
+  "id": "whirlwind-stone",
+  "name": "Whirlwind Stone",
+  "nameKo": "회오리 돌",
+  "rarity": "advanced",
+  "maxLevel": 3,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Universal Damage Boost +8%; Move Speed +24%"
+ },
+ {
+  "id": "white-branch",
+  "name": "White Branch",
+  "nameKo": "하얀 나뭇가지",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Lake"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "white-cape",
+  "name": "White Cape",
+  "nameKo": "순백의 망토",
+  "rarity": "advanced",
+  "maxLevel": 5,
+  "categories": [
+   "Mystic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Duration of Buffs Applied by Self +200%"
+ },
+ {
+  "id": "white-crust-bread",
+  "name": "White Crust Bread",
+  "nameKo": "흰 테두리 빵",
+  "rarity": "legendary",
+  "maxLevel": 2,
+  "categories": [
+   "Guardian"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Upon taking damage, gain invincibility for {TIME} seconds"
+ },
+ {
+  "id": "white-eggshell",
+  "name": "White Eggshell",
+  "nameKo": "하얀 알 껍질",
+  "rarity": "rare",
+  "maxLevel": 4,
+  "categories": [
+   "Mystic"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "If the target’s HP is below {LIMIT}, they die immediately (does not affect bosses)"
+ },
+ {
+  "id": "white-paper",
+  "name": "White Paper",
+  "nameKo": "하얀 종이",
+  "rarity": "advanced",
+  "maxLevel": 1,
+  "categories": [],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Universal Damage Boost +6%; Increase combo count by 1 if artifacts in both adjacent slots have the same combo; ; "
+ },
+ {
+  "id": "white-planet",
+  "name": "White Planet",
+  "nameKo": "하얀 행성",
+  "rarity": "rare",
+  "maxLevel": 7,
+  "categories": [
+   "Planet"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Summon White Planet that fires Ice Bullets\n[Damage: {DAMAGE}]"
+ },
+ {
+  "id": "wind-sheet-music",
+  "name": "Wind Sheet Music",
+  "nameKo": "악보 '바람'",
+  "rarity": "advanced",
+  "maxLevel": 4,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "windgrass-scarf",
+  "name": "Windgrass Scarf",
+  "nameKo": "바람풀 목도리",
+  "rarity": "common",
+  "maxLevel": 3,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ },
+ {
+  "id": "wings",
+  "name": "Wings",
+  "nameKo": "날개",
+  "rarity": "legendary",
+  "maxLevel": 5,
+  "categories": [
+   "Wind Song"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Attack Speed +18%"
+ },
+ {
+  "id": "yakumo-short-blade",
+  "name": "Yakumo Short Blade",
+  "nameKo": "소태도 야쿠모",
+  "rarity": "rare",
+  "maxLevel": 3,
+  "categories": [
+   "Sturdy"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": false,
+  "grimoire": false,
+  "effect": "Dash Attack Damage +50%; Dash Recovery Speed +20%"
+ },
+ {
+  "id": "yellow-planet",
+  "name": "Yellow Planet",
+  "nameKo": "노란 행성",
+  "rarity": "advanced",
+  "maxLevel": 6,
+  "categories": [
+   "Planet"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Summons a yellow planet that shoots bouncing Physical projectiles\n[Damage: {DAMAGE}]"
+ },
+ {
+  "id": "zap-bug",
+  "name": "Zap Bug",
+  "nameKo": "찌릿충",
+  "rarity": "rare",
+  "maxLevel": 5,
+  "categories": [
+   "Magitech"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": "Electrocution stacks +3"
+ },
+ {
+  "id": "zappy-custard-pastry",
+  "name": "Zappy Custard Pastry",
+  "nameKo": "찌릿 슈크림빵",
+  "rarity": "common",
+  "maxLevel": 2,
+  "categories": [
+   "Storm Cloud"
+  ],
+  "restriction": null,
+  "weapon": null,
+  "unique": true,
+  "grimoire": false,
+  "effect": ""
+ }
+]
