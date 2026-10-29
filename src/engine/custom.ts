@@ -25,8 +25,8 @@ const cache = new Map<string, TabletDef>();
 /**
  * Builds the merged definition of a synthesised (합성) tablet.
  * Rules (namu wiki): the result inherits every effect of both parts — level areas, ignore areas,
- * placement conditions (all must hold). The result is always non-rotatable.
- * Each part is merged at its own rotation.
+ * placement conditions (all must hold). The result can be rotated (as a whole) only when every part is
+ * rotatable. Each part is merged at its own rotation.
  */
 export function buildCustomTablet(parts: TabletPart[], catalog: Catalog): TabletDef | undefined {
   const id = customId(parts);
@@ -36,7 +36,7 @@ export function buildCustomTablet(parts: TabletPart[], catalog: Catalog): Tablet
   if (defs.some((d) => !d) || defs.length === 0) return undefined;
   const queries: TabletQuery[] = [];
   const conditions: TabletCondition[] = [];
-  const rotatable = false; // synthesised tablets can never be rotated (game rule)
+  const rotatable = defs.every((d) => d!.rotatable); // game rule: rotatable parts give a rotatable result
   let rarity = defs[0]!.rarity;
   defs.forEach((d, i) => {
     const def = d!;
