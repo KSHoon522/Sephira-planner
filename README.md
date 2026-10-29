@@ -17,8 +17,12 @@ npm run dev                    # http://localhost:3000
 - **AI 목표 설정**: "샤프 아이 중심 정밀 빌드" 처럼 말로 적은 목표를 LLM(Claude 또는 Gemini)이 최적화 설정값(아티팩트 중요도·콤보 목표·관계 규칙·금빛 침 가치·비활성 페널티)으로 바꿔 제안. 배치 계산은 그대로 최적화 엔진이 함. 제안 내용을 확인한 뒤 적용 / 적용하고 최적화 / 되돌리기. (`src/ai/`, `src/app/api/ai/goals/route.ts`)
 - **스크린샷 인식 (/import)**: 게임 캡쳐 → 격자 자동 감지(칸 테두리 프로파일 피팅) → 셀별
   1. 레벨 텍스트 판독 (`cur/max` 3×5 픽셀 폰트, 노란 `-N` = 석판) → 후보를 같은 ★상한 아티팩트 / 석판으로 압축
-  2. 스프라이트 분리(배경색 차이 + 연결요소) → 24×24 정규화 → 색 + 실루엣 IoU + 종횡비로 참조 아이콘과 매칭
+  2. 게임 픽셀 복원: 가방 간격이 게임 픽셀의 정수배(샘플에선 40칸)라는 점과 색 경계 위치로 캡쳐 배율(예: 4.86배)과 위상을 찾고, 게임 픽셀 하나당 한 번씩 샘플링 → 칸 하나 = 34×34 원본 픽셀 (`src/vision/sprite.ts`)
+  3. 원본 해상도에서 스프라이트 분리 → 참조 아이콘(정수배 확대는 되돌림)·학습 템플릿과 픽셀 단위 비교. 위치 ±3픽셀, 석판은 4방향 회전까지 탐색. 레벨 글자·등급 표시 영역은 비교에서 제외. 마법서는 가운데 문양 비중을 높여 비교
+  4. 칸 오른쪽 위 등급 표시 색(파랑 고급 / 주황 희귀 / 빨강 전설 / 없음 일반)과 아이템 등급이 다르면 감점
+  5. 고유 아이템은 가방 전체에서 한 번만 배정 (확신이 높은 칸부터)
   참조 아이콘과 실제 게임 스프라이트가 다른 아이템이 많아 처음엔 오인식이 있음. 칸을 클릭해 바로잡고 "전체 학습"을 누르면 브라우저(localStorage)에 템플릿이 저장되어 이후 같은 아이템은 정확히 인식됨.
+  학습 저장 형식은 v4(원본 픽셀 스프라이트). 이전 방식(v3)으로 저장된 학습은 변환할 수 없어 사용하지 않음.
 - **석판 합성**: 석판 탭의 "합성" 버튼 또는 인식 화면의 칸 지정에서 재료 2개(+각 회전)를 골라 합성 석판 생성. 효과 영역·레벨·제약 무시·배치 조건을 모두 계승. 두 재료가 모두 회전 가능하면 결과도 통째로 회전 가능(최적화도 회전시킴), 하나라도 회전 불가면 회전 불가 (`src/engine/custom.ts`). 스크린샷 인식은 '합성 석판'인 것만 판별하고(공용 스프라이트), 재료 2개와 각 회전은 칸 클릭 후 사용자가 지정.
 - **데이터 (/db)**: 석판 66종 패턴, 아티팩트 308종 목록.
 
@@ -34,7 +38,7 @@ npm run dev                    # http://localhost:3000
 1. `/import` 에서 캡쳐 인식 → 틀린 칸 클릭해서 바로잡기 → **전체 학습**
 2. 하단 **학습 내보내기** → `learned-templates.json` 다운로드
 3. 그 파일을 `src/data/learned-templates.json` 에 덮어쓰고 커밋/배포 → 모든 사용자가 같은 정확도로 시작
-   (내장 + 브라우저 학습이 합쳐져 내보내지므로 반복해도 누적됨. 아이템당 최근 4샘플, 샘플당 ≈3KB)
+   (내장 + 브라우저 학습이 합쳐져 내보내지므로 반복해도 누적됨. 아이템당 최근 4샘플, 샘플당 ≈3.6KB)
 
 ## 구조
 
@@ -43,7 +47,7 @@ src/engine/   grid.ts(레벨 계산), optimize.ts(최적화), optimize.worker.ts
 src/ai/       goals.ts(요청/응답 타입·스키마·검증), prompt.ts(서버 전용: 프롬프트 생성)
 src/app/api/ai/goals/route.ts   LLM 호출 (Claude SDK / Gemini REST)
 src/data/     tablets.json, artifacts.json (빌드 산출물), *.raw.json (원본 스크랩), artifacts.ko.json
-src/vision/   signature.ts(셀 이미지 시그니처), templates.ts(아이콘/학습 템플릿 매칭)
+src/vision/   sprite.ts(게임 픽셀 복원·스프라이트 비교), templates.ts(아이콘/학습 템플릿·매칭), grid.ts, text.ts
 src/store/    useBag.ts(상태+localStorage), useOptimizer.ts
 src/components/ BagGrid, Palette, Inventory, ControlPanel, GoalsPanel, AiGoalsPanel, TabletPattern, ItemIcon
 scripts/      build-data.mjs(raw→json), fetch-icons.mjs, engine-test.mjs
