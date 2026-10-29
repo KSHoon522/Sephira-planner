@@ -71,13 +71,13 @@ export function TabletCombiner({ onCreate, onClose, initial }: { onCreate: (part
           <TabletPattern def={merged} cell={12} />
           <div className="text-tiny text-[var(--muted)] flex-1">
             <div className="text-xs font-bold text-[var(--fg)]">{merged.nameKo}</div>
-            <div>회전 불가{merged.conditions?.length ? ` · 조건: ${merged.conditions.map(condKo).join(" + ")}` : ""}</div>
+            <div>{merged.rotatable ? "회전 가능" : "회전 불가"}{merged.conditions?.length ? ` · 조건: ${merged.conditions.map(condKo).join(" + ")}` : ""}</div>
             <div>레벨 합 {merged.queries.reduce((a, qq) => a + (qq.effect.kind === "level" && qq.type === "cell" ? qq.effect.value : 0), 0)} (단일 칸 기준)</div>
           </div>
           <button onClick={() => onCreate(parts)} className="px-btn px-btn-gold">추가</button>
         </div>
       )}
-      <p className="text-tiny text-[var(--muted)]">합성 석판은 두 재료의 효과 영역·레벨·제약 무시·배치 조건을 모두 물려받고, 결과는 항상 회전 불가입니다. 재료 회전은 합성 시점의 방향입니다.</p>
+      <p className="text-tiny text-[var(--muted)]">합성 석판은 두 재료의 효과 영역·레벨·제약 무시·배치 조건을 모두 물려받습니다. 두 재료가 모두 회전 가능하면 결과도 통째로 회전할 수 있고, 하나라도 회전 불가면 회전 불가입니다. 재료 회전은 합성 시점의 방향입니다.</p>
     </div>
   );
 }
