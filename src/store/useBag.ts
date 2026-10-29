@@ -27,11 +27,21 @@ export type Action =
   | { type: "setEvalOpt"; key: "edgeCountsAsEmpty" | "inactivePenalty" | "needleValue"; value: number | boolean }
   | { type: "setComboGoals"; goals: ComboGoal[] }
   | { type: "setRelations"; relations: RelationRule[] }
+  | { type: "applyGoals"; goals: GoalSettings }
   | { type: "select"; uid: string | null }
   | { type: "applyLayout"; cells: (string | null)[]; items: ItemInstance[] }
   | { type: "clearBag" }
   | { type: "reset" }
   | { type: "hydrate"; state: BagState };
+
+/** Everything the AI goal assistant may change, applied (and undone) as one step. */
+export interface GoalSettings {
+  weights: Record<string, number>; // artifact uid -> weight
+  comboGoals: ComboGoal[];
+  relations: RelationRule[];
+  needleValue?: number;
+  inactivePenalty?: number;
+}
 
 const STORAGE_KEY = "sephiria-planner:v1";
 
@@ -118,6 +128,18 @@ export function reducer(s: BagState, a: Action): BagState {
     case "setEvalOpt": return { ...s, evalOpts: { ...s.evalOpts, [a.key]: a.value } };
     case "setComboGoals": return { ...s, evalOpts: { ...s.evalOpts, comboGoals: a.goals } };
     case "setRelations": return { ...s, evalOpts: { ...s.evalOpts, relations: a.relations } };
+    case "applyGoals": {
+      const items = { ...s.items };
+      for (const [uid, weight] of Object.entries(a.goals.weights)) {
+        const it = items[uid];
+        if (it?.kind === "artifact") items[uid] = { ...it, weight: Math.max(0, weight) };
+      }
+      const relations = a.goals.relations.filter((r) => items[r.a] && items[r.b]);
+      const evalOpts = { ...s.evalOpts, comboGoals: a.goals.comboGoals, relations };
+      if (a.goals.needleValue !== undefined) evalOpts.needleValue = a.goals.needleValue;
+      if (a.goals.inactivePenalty !== undefined) evalOpts.inactivePenalty = a.goals.inactivePenalty;
+      return { ...s, items, evalOpts };
+    }
     case "select": return { ...s, selected: a.uid };
     case "applyLayout": {
       const items = { ...s.items };

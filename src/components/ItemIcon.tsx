@@ -14,8 +14,8 @@ export function ItemIcon({ id, label, rarity, size = 36, kind }: {
   if (failed) {
     return (
       <div
-        className={`${cls} flex items-center justify-center rounded-sm text-[10px] leading-tight text-center font-medium overflow-hidden select-none`}
-        style={{ width: size, height: size, background: "color-mix(in oklab, var(--rc) 22%, var(--cell))", color: "var(--rc)", border: "1px solid color-mix(in oklab, var(--rc) 50%, transparent)", borderRadius: kind === "tablet" ? 2 : 6 }}
+        className={`${cls} flex items-center justify-center text-tiny leading-tight text-center overflow-hidden select-none px-shadow`}
+        style={{ width: size, height: size, background: "color-mix(in oklab, var(--rc) 18%, var(--cell))", color: "var(--rc)", boxShadow: `inset 0 0 0 ${kind === "tablet" ? 2 : 1}px color-mix(in oklab, var(--rc) 50%, transparent)` }}
         title={label}
       >
         {label.slice(0, 4)}
@@ -26,6 +26,8 @@ export function ItemIcon({ id, label, rarity, size = 36, kind }: {
     // eslint-disable-next-line @next/next/no-img-element
     <img src={iconUrl(id)} alt={label} width={size} height={size} draggable={false}
       style={{ width: size, height: size, imageRendering: "pixelated", objectFit: "contain" }}
+      // a server-rendered image can fail before hydration attaches onError
+      ref={(el) => { if (el?.complete && el.naturalWidth === 0) setFailed(true); }}
       onError={() => setFailed(true)} />
   );
 }

@@ -29,21 +29,21 @@ export function TabletPattern({ def, rotation = 0, cell = 14 }: { def: TabletDef
   }
   const cols = maxX - minX + 1, rows = maxY - minY + 1;
   return (
-    <div className="inline-grid gap-px" style={{ gridTemplateColumns: `repeat(${cols}, ${cell}px)` }}>
+    <div className="inline-grid gap-px p-px bg-[var(--frame-dark)]" style={{ gridTemplateColumns: `repeat(${cols}, ${cell}px)` }}>
       {Array.from({ length: rows * cols }, (_, k) => {
         const x = minX + (k % cols), y = minY + Math.floor(k / cols);
         const i = g.index(x, y);
         const isT = x === cx && y === cy;
         const v = level[i];
         let bg = "var(--cell)", color = "var(--muted)", text = "";
-        if (isT) { bg = "var(--accent)"; color = "#000"; text = "■"; }
+        if (isT) { bg = "var(--accent)"; color = "#2b1a04"; text = "◆"; }
         else if (disable[i]) { bg = "#3a1f1f"; color = "var(--bad)"; text = "×"; }
         else if (v > 0) { bg = `color-mix(in oklab, var(--good) ${Math.min(90, 25 + v * 15)}%, var(--cell))`; color = "#0b1f12"; text = `+${v}`; }
         else if (v < 0) { bg = `color-mix(in oklab, var(--bad) ${Math.min(90, 25 + -v * 15)}%, var(--cell))`; color = "#2a0b0b"; text = `${v}`; }
         else if (ignore[i]) { bg = "#2a2f4a"; color = "#b8c2ff"; text = "무"; }
         return (
-          <div key={k} className="flex items-center justify-center rounded-[2px] font-mono font-semibold"
-            style={{ width: cell, height: cell, background: bg, color, fontSize: Math.max(8, cell * 0.55) }}>
+          <div key={k} className="flex items-center justify-center font-bold leading-none"
+            style={{ width: cell, height: cell, background: bg, color, fontSize: Math.max(8, Math.round(cell * 0.55)) }}>
             {text}
           </div>
         );
