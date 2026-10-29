@@ -253,29 +253,29 @@ export default function ImportPage() {
   const pickerCell = picker !== null ? cells.find((c) => c.index === picker) ?? null : null;
 
   return (
-    <div className="p-4 grid gap-4 h-[calc(100vh-3rem)] min-h-0" style={{ gridTemplateColumns: "1fr 400px" }}>
+    <div className="p-3 grid gap-3 lg:h-[calc(100vh-50px)] min-h-0 grid-cols-1 lg:grid-cols-[1fr_420px]">
       <section className="min-h-0 overflow-auto scroll-thin flex flex-col gap-3">
-        <div className="flex flex-wrap items-center gap-3 text-sm">
-          <label className="px-3 py-1.5 rounded bg-[var(--accent)] text-black font-semibold cursor-pointer">
+        <div className="flex flex-wrap items-center gap-3">
+          <label className="px-btn px-btn-gold">
             스크린샷 열기
             <input type="file" accept="image/*" className="hidden" onChange={(e) => e.target.files?.[0] && loadFile(e.target.files[0])} />
           </label>
           <span className="text-[var(--muted)]">또는 붙여넣기(Ctrl/⌘+V) · 드롭</span>
-          <button onClick={async () => { const b = await fetch("/samples/bag1.png").then((r) => r.blob()); loadFile(b); setRows(6); }} className="text-xs px-2 py-1 rounded bg-[var(--panel-2)] hover:bg-[var(--line)]">샘플 불러오기</button>
-          <span className="ml-auto text-xs text-[var(--muted)]">
+          <button onClick={async () => { const b = await fetch("/samples/bag1.png").then((r) => r.blob()); loadFile(b); setRows(6); }} className="px-btn">샘플 불러오기</button>
+          <span className="ml-auto text-tiny text-[var(--muted)]">
             아이콘 {templates ? `${iconsAvailable}` : `${progress[0]}/${progress[1]}`} · 내장 학습 {bundledCount} · 내 학습 {learnedCount}
           </span>
         </div>
         {templates && iconsAvailable === 0 && (
-          <div className="text-xs rounded border border-[var(--warn)] text-[var(--warn)] p-2">
+          <div className="px-panel text-[var(--warn)] p-2">
             public/icons 에 아이콘이 없습니다. <code>node scripts/fetch-icons.mjs</code> 실행 후 새로고침하세요.
           </div>
         )}
-        <div className="relative rounded-lg border border-dashed border-[var(--line)] bg-[var(--panel)] min-h-[300px] flex items-center justify-center overflow-hidden"
+        <div className="relative px-panel px-window min-h-[300px] flex items-center justify-center overflow-hidden"
           onDragOver={(e) => e.preventDefault()}
           onDrop={(e) => { e.preventDefault(); const f = e.dataTransfer.files?.[0]; if (f) loadFile(f); }}>
           {!img ? (
-            <div className="text-[var(--muted)] text-sm text-center p-8 leading-relaxed">
+            <div className="text-[var(--muted)] text-center p-8 leading-relaxed">
               게임 가방 화면 캡쳐를 드롭하거나 붙여넣으세요.<br />
               가방 격자(칸 테두리)가 잘 보이게 캡쳐할수록 자동 감지가 정확합니다.
             </div>
@@ -284,53 +284,53 @@ export default function ImportPage() {
           )}
         </div>
         {img && (
-          <div className="flex flex-wrap items-center gap-3 text-sm">
+          <div className="flex flex-wrap items-center gap-3">
             <label className="flex items-center gap-2">행 수
-              <input type="number" min={4} max={7} value={rows} onChange={(e) => setRows(Math.min(7, Math.max(4, Number(e.target.value))))} className="w-14 bg-[var(--panel-2)] border border-[var(--line)] rounded px-1" />
+              <input type="number" min={4} max={7} value={rows} onChange={(e) => setRows(Math.min(7, Math.max(4, Number(e.target.value))))} className="w-14 px-input" />
             </label>
             <label className="flex items-center gap-2">마지막 행 칸 수
-              <input type="number" min={1} max={6} value={lastRow} onChange={(e) => setLastRow(Math.min(6, Math.max(1, Number(e.target.value))))} className="w-14 bg-[var(--panel-2)] border border-[var(--line)] rounded px-1" />
+              <input type="number" min={1} max={6} value={lastRow} onChange={(e) => setLastRow(Math.min(6, Math.max(1, Number(e.target.value))))} className="w-14 px-input" />
             </label>
             <span className="text-[var(--muted)]">= {cellCount}칸</span>
-            <button onClick={() => { setRect({ x: 0, y: 0, w: img.naturalWidth, h: img.naturalHeight }); setCells([]); }} className="text-xs px-2 py-1 rounded bg-[var(--panel-2)] hover:bg-[var(--line)]">영역 = 전체</button>
-            <span className="text-xs" style={{ color: gridCells && gridInfo.startsWith("격자 감지") ? "var(--good)" : "var(--warn)" }}>{gridInfo}</span>
-            <button disabled={!gridCells || !templates || busy} onClick={recognise} className="ml-auto px-4 py-1.5 rounded bg-[var(--accent)] text-black font-semibold disabled:opacity-40">
+            <button onClick={() => { setRect({ x: 0, y: 0, w: img.naturalWidth, h: img.naturalHeight }); setCells([]); }} className="px-btn">영역 = 전체</button>
+            <span style={{ color: gridCells && gridInfo.startsWith("격자 감지") ? "var(--good)" : "var(--warn)" }}>{gridInfo}</span>
+            <button disabled={!gridCells || !templates || busy} onClick={recognise} className="ml-auto px-btn px-btn-gold">
               {busy ? "인식 중…" : cells.length ? "다시 인식" : "인식"}
             </button>
           </div>
         )}
-        {img && <p className="text-[11px] text-[var(--muted)]">가방 전체가 화면에 있으면 &quot;영역 = 전체&quot;로 충분합니다. 다른 UI가 섞여 있으면 가방 주변을 드래그해 영역을 지정하세요 (Shift+드래그: 새로 그리기, 우하단 모서리: 크기). 인식 후 칸을 클릭하면 직접 지정할 수 있습니다.</p>}
+        {img && <p className="text-tiny text-[var(--muted)]">가방 전체가 화면에 있으면 &quot;영역 = 전체&quot;로 충분합니다. 다른 UI가 섞여 있으면 가방 주변을 드래그해 영역을 지정하세요 (Shift+드래그: 새로 그리기, 우하단 모서리: 크기). 인식 후 칸을 클릭하면 직접 지정할 수 있습니다.</p>}
       </section>
 
-      <aside className="min-h-0 overflow-y-auto scroll-thin rounded-lg border border-[var(--line)] bg-[var(--panel)] p-3 flex flex-col gap-2">
+      <aside className="min-h-0 overflow-y-auto scroll-thin px-panel p-3 flex flex-col gap-2">
         {pickerCell ? (
           <Picker cell={pickerCell} onPick={(key, rot) => { setChoice(pickerCell.index, key, rot); setPicker(null); }} onRotate={(r) => setRotation(pickerCell.index, r)} onClose={() => setPicker(null)} />
         ) : (
           <>
             <div className="flex items-center justify-between">
-              <h3 className="text-xs uppercase tracking-wider text-[var(--muted)]">인식 결과 ({cells.length})</h3>
-              {cells.length > 0 && <button onClick={learnAll} className="text-xs px-2 py-1 rounded bg-[var(--panel-2)] hover:bg-[var(--line)]" title="현재 선택된 값들을 모두 학습 템플릿으로 저장 — 다음부터 같은 아이템은 정확히 인식됩니다">전체 학습</button>}
+              <h3 className="px-title flex-1">인식 결과 ({cells.length})</h3>
+              {cells.length > 0 && <button onClick={learnAll} className="px-btn ml-2" title="현재 선택된 값들을 모두 학습 템플릿으로 저장 — 다음부터 같은 아이템은 정확히 인식됩니다">전체 학습</button>}
             </div>
-            {cells.length === 0 && <p className="text-xs text-[var(--muted)] leading-relaxed">인식 결과가 여기에 표시됩니다. 처음엔 참조 아이콘과 게임 스프라이트 차이로 오인식이 있을 수 있어요. 칸을 클릭해 올바른 아이템을 고른 뒤 &quot;전체 학습&quot;을 누르면 이후 정확도가 크게 올라갑니다.</p>}
+            {cells.length === 0 && <p className="text-[var(--muted)] leading-relaxed">인식 결과가 여기에 표시됩니다. 처음엔 참조 아이콘과 게임 스프라이트 차이로 오인식이 있을 수 있어요. 칸을 클릭해 올바른 아이템을 고른 뒤 &quot;전체 학습&quot;을 누르면 이후 정확도가 크게 올라갑니다.</p>}
             {cells.map((c) => {
               const best = c.matches[0];
               const conf = best ? Math.max(0, Math.min(1, 1 - (best.dist - 0.4) / 1.4)) : 0;
               return (
-                <div key={c.index} className="flex items-center gap-2 p-1 rounded bg-[var(--panel-2)] cursor-pointer hover:outline hover:outline-1 hover:outline-[var(--accent)]" onClick={() => setPicker(c.index)}>
+                <div key={c.index} className="px-row flex items-center gap-2 p-1 bg-[var(--panel-2)] cursor-pointer" onClick={() => setPicker(c.index)}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={c.thumb} alt="" width={36} height={36} className="rounded" style={{ imageRendering: "pixelated" }} />
+                  <img src={c.thumb} alt="" width={36} height={36} className="shadow-[0_0_0_2px_var(--frame-dark)]" style={{ imageRendering: "pixelated" }} />
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-1 text-[11px] text-[var(--muted)]">
-                      <span className="font-mono">#{c.index + 1}</span>
+                    <div className="flex items-center gap-1 text-tiny text-[var(--muted)]">
+                      <span>#{c.index + 1}</span>
                       <span>({c.index % 6 + 1},{Math.floor(c.index / 6) + 1})</span>
-                      {c.text.kind !== "none" && <span className="font-mono text-[var(--accent)]">{c.text.kind === "tablet" ? "석판" : `Lv ${c.text.cur ?? "?"}/${c.text.max ?? "?"}`}</span>}
+                      {c.text.kind !== "none" && <span className="text-[var(--accent)]">{c.text.kind === "tablet" ? "석판" : `Lv ${c.text.cur ?? "?"}/${c.text.max ?? "?"}`}</span>}
                       {c.sig && <span style={{ color: conf > 0.6 ? "var(--good)" : conf > 0.35 ? "var(--warn)" : "var(--bad)" }}>신뢰도 {(conf * 100).toFixed(0)}%</span>}
                     </div>
-                    <div className="text-sm truncate flex items-center gap-1" style={{ color: c.choice === "empty" ? "var(--muted)" : "var(--fg)" }}>
+                    <div className="truncate flex items-center gap-1" style={{ color: c.choice === "empty" ? "var(--muted)" : "var(--fg)" }}>
                       {labelOf(c.choice)}
-                      {c.choice === "tablet:custom" && <span className="text-[10px] px-1 rounded bg-[var(--bad)] text-black font-semibold">재료 지정 필요</span>}
+                      {c.choice === "tablet:custom" && <span className="text-tiny px-1 bg-[var(--bad)] text-[#2b0709]">재료 지정 필요</span>}
                       {isRotatableKey(c.choice) && (
-                        <button onClick={(e) => { e.stopPropagation(); setRotation(c.index, c.rotation + 1); }} className="text-[10px] px-1 rounded bg-[var(--panel)] hover:bg-[var(--line)] font-mono" title="회전 (클릭: +90°)">
+                        <button onClick={(e) => { e.stopPropagation(); setRotation(c.index, c.rotation + 1); }} className="px-btn px-btn-sm text-tiny" title="회전 (클릭: +90°)">
                           ↻{c.rotation * 90}°
                         </button>
                       )}
@@ -341,18 +341,18 @@ export default function ImportPage() {
               );
             })}
             {cells.length > 0 && (
-              <div className="sticky bottom-0 bg-[var(--panel)] pt-2 flex flex-col gap-2 border-t border-[var(--line)]">
-                <label className="flex items-center gap-2 text-xs"><input type="checkbox" checked={merge} onChange={(e) => setMerge(e.target.checked)} /> 기존 설정(무기 등) 유지하고 아이템만 교체</label>
-                <button onClick={apply} className="py-2 rounded bg-[var(--good)] text-black font-semibold">가방에 적용 → 배치 화면으로</button>
+              <div className="sticky bottom-0 bg-[var(--panel)] pt-2 flex flex-col gap-2 border-t-2 border-[var(--frame-dark)]">
+                <label className="flex items-center gap-2"><input type="checkbox" checked={merge} onChange={(e) => setMerge(e.target.checked)} /> 기존 설정(무기 등) 유지하고 아이템만 교체</label>
+                <button onClick={apply} className="py-2 px-btn px-btn-good">가방에 적용 → 배치 화면으로</button>
               </div>
             )}
-            <div className="mt-auto pt-2 flex flex-col gap-1 text-[11px] text-[var(--muted)] border-t border-[var(--line)]">
+            <div className="mt-auto pt-2 flex flex-col gap-1 text-[var(--muted)] border-t-2 border-[var(--frame-dark)]">
               <div className="flex flex-wrap gap-2 pt-1">
-                <button onClick={exportTemplates} className="px-2 py-1 rounded bg-[var(--panel-2)] hover:bg-[var(--line)]" title="내장+내 학습 템플릿을 JSON으로 저장. src/data/learned-templates.json 에 넣고 배포하면 모든 사용자에게 적용">학습 내보내기</button>
-                <label className="px-2 py-1 rounded bg-[var(--panel-2)] hover:bg-[var(--line)] cursor-pointer">학습 가져오기
+                <button onClick={exportTemplates} className="px-btn" title="내장+내 학습 템플릿을 JSON으로 저장. src/data/learned-templates.json 에 넣고 배포하면 모든 사용자에게 적용">학습 내보내기</button>
+                <label className="px-btn">학습 가져오기
                   <input type="file" accept="application/json" className="hidden" onChange={(e) => { const f = e.target.files?.[0]; if (f) importTemplates(f); e.target.value = ""; }} />
                 </label>
-                <button onClick={() => { if (confirm("내 학습 템플릿을 모두 삭제할까요? (내장 템플릿은 유지)")) { clearLearnedTemplates(); refreshLearned(); } }} className="px-2 py-1 rounded hover:bg-[var(--bad)]">내 학습 초기화</button>
+                <button onClick={() => { if (confirm("내 학습 템플릿을 모두 삭제할까요? (내장 템플릿은 유지)")) { clearLearnedTemplates(); refreshLearned(); } }} className="px-btn px-btn-ghost">내 학습 초기화</button>
               </div>
               {ioMsg && <div className="text-[var(--accent)]">{ioMsg}</div>}
             </div>
@@ -379,32 +379,32 @@ function Picker({ cell, onPick, onRotate, onClose }: { cell: CellRec; onPick: (k
     <div className="flex flex-col gap-2 min-h-0">
       <div className="flex items-center gap-2">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={cell.thumb} alt="" width={44} height={44} className="rounded" style={{ imageRendering: "pixelated" }} />
-        <div className="text-sm">칸 #{cell.index + 1} 지정</div>
-        <button onClick={onClose} className="ml-auto text-xs px-2 py-1 rounded bg-[var(--panel-2)]">닫기</button>
+        <img src={cell.thumb} alt="" width={44} height={44} className="shadow-[0_0_0_2px_var(--frame-dark)]" style={{ imageRendering: "pixelated" }} />
+        <div className="px-title flex-1">칸 #{cell.index + 1} 지정</div>
+        <button onClick={onClose} className="px-btn px-btn-sm">닫기</button>
       </div>
       <input autoFocus value={q} onChange={(e) => setQ(e.target.value)} placeholder="이름 검색 (한/영)…"
-        className="bg-[var(--panel-2)] border border-[var(--line)] rounded px-2 py-1 text-sm outline-none focus:border-[var(--accent)]" />
+        className="px-input" />
       {isRotatableKey(cell.choice) && (
-        <div className="flex items-center gap-1 text-xs text-[var(--muted)]">
+        <div className="flex items-center gap-1 text-[var(--muted)]">
           <span>회전</span>
           {[0, 1, 2, 3].map((r) => (
-            <button key={r} onClick={() => onRotate(r)} className={`px-2 py-0.5 rounded font-mono ${cell.rotation === r ? "bg-[var(--accent)] text-black" : "bg-[var(--panel-2)] hover:bg-[var(--line)]"}`}>{r * 90}°</button>
+            <button key={r} onClick={() => onRotate(r)} className={`px-btn px-btn-sm ${cell.rotation === r ? "px-btn-on" : ""}`}>{r * 90}°</button>
           ))}
           <TabletMini id={cell.choice.slice(7)} rotation={cell.rotation} />
         </div>
       )}
-      <button onClick={() => onPick("empty")} className="text-left text-sm px-2 py-1 rounded hover:bg-[var(--panel-2)] text-[var(--muted)]">(빈 칸)</button>
-      <button onClick={() => setCombine((v) => !v)} className="text-left text-sm px-2 py-1 rounded hover:bg-[var(--panel-2)] text-[var(--accent)]">{combine ? "합성 닫기" : "합성 석판으로 지정…"}</button>
+      <button onClick={() => onPick("empty")} className="px-row text-left px-2 py-1 text-[var(--muted)]">(빈 칸)</button>
+      <button onClick={() => setCombine((v) => !v)} className="px-row text-left px-2 py-1 text-[var(--accent)]">{combine ? "합성 닫기" : "합성 석판으로 지정…"}</button>
       {combine && (
         <>
-          <button onClick={() => onPick("tablet:custom", 0)} className="text-left text-xs px-2 py-1 rounded hover:bg-[var(--panel-2)] text-[var(--muted)]">합성 석판 (재료 나중에 지정)</button>
+          <button onClick={() => onPick("tablet:custom", 0)} className="px-row text-left px-2 py-1 text-[var(--muted)]">합성 석판 (재료 나중에 지정)</button>
           <TabletCombiner initial={parseCustomId(cell.choice.startsWith("tablet:") ? cell.choice.slice(7) : "") ?? undefined} onCreate={(parts) => onPick(`tablet:${customId(parts)}`, 0)} />
         </>
       )}
       {cell.matches.length > 0 && !q && (
         <>
-          <div className="text-[10px] uppercase tracking-wider text-[var(--muted)]">추천</div>
+          <div className="text-tiny text-[var(--muted)]">추천</div>
           {cell.matches.map((m) => <PickRow key={m.template.key} k={m.template.key} onPick={(k) => onPick(k, m.rotation)} extra={`${m.dist.toFixed(2)}${m.template.kind === "tablet" && isRotatableId(m.template.defId) ? ` · ${m.rotation * 90}°` : ""}`} />)}
         </>
       )}
@@ -419,11 +419,11 @@ function PickRow({ k, onPick, extra }: { k: string; onPick: (key: string) => voi
   const d = kind === "tablet" ? tabletDefById(id, catalog) : catalog.artifacts.get(id);
   if (!d) return null;
   return (
-    <button onClick={() => onPick(k)} className={`rarity-${d.rarity} flex items-center gap-2 text-left px-1 py-1 rounded hover:bg-[var(--panel-2)]`}>
+    <button onClick={() => onPick(k)} className={`rarity-${d.rarity} px-row flex items-center gap-2 text-left px-1 py-1`}>
       <ItemIcon id={d.id} label={d.nameKo} rarity={d.rarity} kind={kind} size={26} />
-      <span className="text-sm" style={{ color: "var(--rc)" }}>{kind === "tablet" ? "석판 · " : ""}{d.nameKo}</span>
-      <span className="text-xs text-[var(--muted)] truncate">{d.name}</span>
-      {extra && <span className="ml-auto text-[10px] font-mono text-[var(--muted)]">{extra}</span>}
+      <span className="font-bold" style={{ color: "var(--rc)" }}>{kind === "tablet" ? "석판 · " : ""}{d.nameKo}</span>
+      <span className="text-tiny text-[var(--muted)] truncate">{d.name}</span>
+      {extra && <span className="ml-auto text-tiny text-[var(--muted)]">{extra}</span>}
     </button>
   );
 }
@@ -444,7 +444,7 @@ function labelOf(key: string) {
 }
 
 function ChoiceIcon({ choice }: { choice: string }) {
-  if (choice === "empty") return <div className="w-7 h-7 rounded border border-dashed border-[var(--line)]" />;
+  if (choice === "empty") return <div className="w-7 h-7 border-2 border-dashed border-[var(--line)]" />;
   const idx = choice.indexOf(":");
   const kind = choice.slice(0, idx) as "artifact" | "tablet", id = choice.slice(idx + 1);
   const d = kind === "tablet" ? tabletDefById(id, catalog) : catalog.artifacts.get(id);

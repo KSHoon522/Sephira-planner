@@ -52,10 +52,10 @@ export function BagGrid({ bag }: { bag: BagApi }) {
 
   const total = g.rows * g.width;
   return (
-    <div className="inline-grid gap-1 p-2 rounded-lg bg-[var(--panel)] border border-[var(--line)]"
+    <div className="px-panel px-window inline-grid gap-1.5 p-3"
       style={{ gridTemplateColumns: `repeat(${g.width}, ${CELL}px)` }}>
       {Array.from({ length: total }, (_, i) => {
-        if (i >= g.cellCount) return <div key={i} style={{ width: CELL, height: CELL }} className="rounded-md opacity-20 bg-[repeating-linear-gradient(45deg,transparent_0_6px,var(--line)_6px_8px)]" />;
+        if (i >= g.cellCount) return <div key={i} style={{ width: CELL, height: CELL }} className="opacity-30 bg-[repeating-linear-gradient(45deg,transparent_0_6px,var(--frame)_6px_8px)]" />;
         const c = result.cells[i];
         const uid = state.cells[i];
         const it = uid ? itemsMap.get(uid) : undefined;
@@ -63,11 +63,8 @@ export function BagGrid({ bag }: { bag: BagApi }) {
         const selected = uid && uid === state.selected;
         const hl = highlight.get(i);
         const isDropTarget = dragUid && hover === i;
-
-        let border = "1px solid var(--line)";
-        if (selected) border = "2px solid var(--accent)";
-        else if (isDropTarget) border = "2px dashed var(--accent)";
-        else if (hl) border = "2px solid color-mix(in oklab, var(--accent) 60%, transparent)";
+        const slot = !it ? "px-slot-empty" : it.kind === "tablet" ? "px-slot-tablet" : "";
+        const ring = selected ? "px-slot-sel" : isDropTarget ? "px-slot-drop" : hl ? "px-slot-hl" : "";
 
         return (
           <div key={i}
@@ -89,36 +86,37 @@ export function BagGrid({ bag }: { bag: BagApi }) {
             }}
             onDoubleClick={() => { if (uid) dispatch({ type: "rotate", uid }); }}
             onContextMenu={(e) => { e.preventDefault(); if (uid) dispatch({ type: "unplace", uid }); }}
-            className="relative rounded-md flex items-center justify-center cursor-pointer select-none transition-colors"
-            style={{ width: CELL, height: CELL, background: uid ? "var(--cell)" : "color-mix(in oklab, var(--cell) 60%, transparent)", border, opacity: it?.kind === "tablet" && !c.tabletActive ? 0.55 : 1 }}
+            className={`px-slot ${slot} ${ring} relative flex items-center justify-center cursor-pointer select-none`}
+            style={{ width: CELL, height: CELL, opacity: it?.kind === "tablet" && !c.tabletActive ? 0.55 : 1 }}
             title={def ? `${def.nameKo} (${def.name})${it?.kind === "artifact" ? ` · Lv ${c.level} / ${c.maxLevel}${c.enchant ? ` (인챈트 ${c.enchant} + 석판 ${c.tabletLevel})` : ""}${c.active ? "" : " · 비활성: " + c.reasons.join(",")}` : ""}` : undefined}
           >
             {!uid && (
-              <span className="font-mono text-xs" style={{ color: c.level > 0 ? "var(--good)" : c.level < 0 ? "var(--bad)" : "var(--line)" }}>
+              <span className="text-xs px-shadow" style={{ color: c.level > 0 ? "var(--good)" : c.level < 0 ? "var(--bad)" : "var(--line)" }}>
                 {c.level > 0 ? `+${c.level}` : c.level < 0 ? c.level : "·"}
               </span>
             )}
             {it && def && (
-              <ItemIcon id={def.id} label={def.nameKo} rarity={def.rarity} kind={it.kind} size={44} />
+              <ItemIcon id={def.id} label={def.nameKo} rarity={def.rarity} kind={it.kind} size={40} />
             )}
+            {/* level reads like the game: cur/max top-left, blue once maxed */}
             {it?.kind === "artifact" && (
-              <span className="absolute bottom-0.5 right-1 font-mono text-[11px] font-bold px-1 rounded"
-                style={{ background: "rgba(0,0,0,.6)", color: !c.active ? "var(--bad)" : c.effectiveLevel >= c.maxLevel ? "var(--accent)" : "var(--good)" }}>
+              <span className="absolute top-1 left-1.5 text-xs leading-none px-shadow"
+                style={{ color: !c.active ? "var(--bad)" : c.effectiveLevel >= c.maxLevel ? "var(--lv-max)" : "var(--fg)" }}>
                 {c.active ? `${c.effectiveLevel}/${c.maxLevel}` : `${c.level}✕`}
               </span>
             )}
             {it?.kind === "tablet" && def && "rotatable" in def && def.rotatable && (
-              <span className="absolute top-0.5 right-1 text-[10px] text-[var(--muted)]" style={{ transform: `rotate(${it.rotation * 90}deg)`, display: "inline-block" }}>▲</span>
+              <span className="absolute top-1 right-1.5 text-tiny leading-none text-[var(--warn)] px-shadow" style={{ transform: `rotate(${it.rotation * 90}deg)`, display: "inline-block" }}>▲</span>
             )}
             {it?.kind === "tablet" && !c.tabletActive && (
-              <span className="absolute bottom-0.5 left-1 text-[10px] text-[var(--bad)]">조건✕</span>
+              <span className="absolute bottom-1 left-1.5 text-tiny leading-none text-[var(--bad)] px-shadow">조건✕</span>
             )}
-            {it?.locked && <span className="absolute top-0.5 left-1 text-[10px]">🔒</span>}
-            {it?.kind === "artifact" && c.enchant > 0 && <span className="absolute top-0.5 right-1 text-[9px] font-bold text-[var(--accent)]">+{c.enchant}</span>}
-            {c.needleHits > 0 && <span className="absolute bottom-0.5 left-1 text-[9px] font-bold text-[var(--good)]" title="북향의 금빛 침 효과">▲×{c.needleHits}</span>}
-            {c.comboGrant.length > 0 && <span className="absolute top-0.5 left-1 text-[9px] font-bold text-[var(--accent)]" title={`콤보 +1: ${c.comboGrant.join(", ")}`}>#+</span>}
+            {it?.locked && <span className="absolute bottom-0.5 right-1 text-tiny leading-none">🔒</span>}
+            {it?.kind === "artifact" && c.enchant > 0 && <span className="absolute top-1 right-1.5 text-tiny leading-none text-[var(--accent)] px-shadow">+{c.enchant}</span>}
+            {c.needleHits > 0 && <span className="absolute bottom-1 left-1.5 text-tiny leading-none text-[var(--good)] px-shadow" title="북향의 금빛 침 효과">▲×{c.needleHits}</span>}
+            {c.comboGrant.length > 0 && <span className="absolute bottom-1 right-1.5 text-tiny leading-none text-[var(--accent)] px-shadow" title={`콤보 +1: ${c.comboGrant.join(", ")}`}>#+</span>}
             {hl && (
-              <span className="absolute -top-1.5 left-1/2 -translate-x-1/2 font-mono text-[10px] font-bold px-1 rounded bg-[var(--accent)] text-black whitespace-nowrap">{hl}</span>
+              <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-tiny px-1 bg-[var(--accent)] text-[#2b1a04] whitespace-nowrap shadow-[0_0_0_1px_#000]">{hl}</span>
             )}
           </div>
         );

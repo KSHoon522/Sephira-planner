@@ -1,18 +1,27 @@
 @import "tailwindcss";
 
+/* Palette taken from the in-game bag: plum window, navy slots, gray metal frames, gold/blue numbers. */
 :root {
-  --bg: #0f1115;
-  --panel: #161a21;
-  --panel-2: #1c212b;
-  --line: #2a3140;
-  --fg: #e6e9ef;
-  --muted: #8a94a6;
-  --accent: #f0b35a;
-  --good: #6ad48a;
-  --bad: #f06a6a;
-  --warn: #f0c96a;
-  --cell: #1b2029;
-  --cell-hover: #242b37;
+  --bg: #1b1320;
+  --bg-2: #241a2b;
+  --frame: #4a3446;
+  --frame-dark: #0d0911;
+  --panel: #222436;
+  --panel-2: #2c2f45;
+  --panel-3: #383c58;
+  --line: #4b5070;
+  --line-hi: #8c92ad;
+  --fg: #ecebf3;
+  --muted: #9a97b0;
+  --accent: #f2c14e;
+  --accent-dark: #9c7320;
+  --good: #6ee08a;
+  --bad: #ff5c6a;
+  --warn: #f5d040;
+  --lv-max: #4aa3ff;
+  --cell: #2c2f45;
+  --cell-tablet: #353a58;
+  --cell-hover: #383c58;
   --r-common: #f2f4f8;
   --r-advanced: #5fa8ff;
   --r-rare: #ffd84d;
@@ -22,12 +31,40 @@
   color-scheme: dark;
 }
 
-body {
-  background: var(--bg);
-  color: var(--fg);
-  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
-  font-size: 14px;
+@theme inline {
+  --font-sans: var(--font-galmuri11), "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  --font-mono: var(--font-galmuri11), ui-monospace, monospace;
+  /* Galmuri11 is drawn on a 12px grid: keep body sizes on it, large text at 2× */
+  --text-xs: 12px;
+  --text-xs--line-height: 18px;
+  --text-sm: 12px;
+  --text-sm--line-height: 18px;
+  --text-base: 12px;
+  --text-base--line-height: 18px;
+  --text-lg: 24px;
+  --text-lg--line-height: 28px;
 }
+
+/* Galmuri9 sits on a 10px grid: small print */
+@utility text-tiny {
+  font-family: var(--font-galmuri9), var(--font-galmuri11), sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+body {
+  background-color: var(--bg);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 6px 6px;
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 18px;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img { image-rendering: pixelated; }
 
 .rarity-common { --rc: var(--r-common); }
 .rarity-advanced { --rc: var(--r-advanced); }
@@ -36,8 +73,135 @@ body {
 .rarity-eternal { --rc: var(--r-eternal); }
 .rarity-bond { --rc: var(--r-bond); }
 
+/* ---- Pixel frames ------------------------------------------------------
+   Offset box-shadows draw 2px borders whose corners stay cut, like sprite UI.
+   Elements keep a matching margin so the frame is not clipped. */
+
+/* window: metal ring + dark outline */
+.px-panel {
+  --ring: var(--line);
+  --edge: var(--frame-dark);
+  background: var(--panel);
+  margin: 4px;
+  box-shadow:
+    inset 0 2px 0 0 rgba(255, 255, 255, 0.05),
+    0 -2px 0 0 var(--ring), 0 2px 0 0 var(--ring), -2px 0 0 0 var(--ring), 2px 0 0 0 var(--ring),
+    -2px -2px 0 0 var(--edge), 2px -2px 0 0 var(--edge), -2px 2px 0 0 var(--edge), 2px 2px 0 0 var(--edge),
+    0 -4px 0 0 var(--edge), 0 4px 0 0 var(--edge), -4px 0 0 0 var(--edge), 4px 0 0 0 var(--edge);
+}
+/* the bag window and page chrome use the plum frame */
+.px-window { --ring: var(--frame); background: var(--bg-2); }
+
+/* section heading: gold, dotted rule underneath */
+.px-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent);
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #000;
+  padding-bottom: 4px;
+  background: linear-gradient(90deg, var(--line) 50%, transparent 0) bottom left / 4px 2px repeat-x;
+}
+.px-title::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  flex: none;
+  background: var(--accent);
+  box-shadow: 1px 1px 0 #000;
+  transform: rotate(45deg);
+}
+
+/* buttons: cut corners, bevel, press-down on click */
+.px-btn {
+  --btn: var(--panel-2);
+  --btn-fg: var(--fg);
+  --edge: var(--frame-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 2px;
+  padding: 3px 8px;
+  background: var(--btn);
+  color: var(--btn-fg);
+  line-height: 18px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow:
+    inset 0 -2px 0 0 rgba(0, 0, 0, 0.35), inset 0 2px 0 0 rgba(255, 255, 255, 0.1),
+    0 -2px 0 0 var(--edge), 0 2px 0 0 var(--edge), -2px 0 0 0 var(--edge), 2px 0 0 0 var(--edge);
+}
+.px-btn:hover:not(:disabled) { filter: brightness(1.15); }
+.px-btn:active:not(:disabled) { transform: translateY(1px); box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.35), 0 -2px 0 0 var(--edge), 0 2px 0 0 var(--edge), -2px 0 0 0 var(--edge), 2px 0 0 0 var(--edge); }
+.px-btn:disabled { opacity: 0.45; cursor: default; }
+.px-btn-gold { --btn: var(--accent); --btn-fg: #2b1a04; font-weight: 700; }
+.px-btn-good { --btn: var(--good); --btn-fg: #0c2614; font-weight: 700; }
+.px-btn-bad { --btn: var(--bad); --btn-fg: #2b0709; font-weight: 700; }
+.px-btn-ghost { --btn: transparent; box-shadow: none; }
+.px-btn-ghost:hover:not(:disabled) { background: var(--panel-3); filter: none; }
+.px-btn-sm { padding: 0 5px; }
+.px-btn-on { --btn: var(--accent); --btn-fg: #2b1a04; }
+
+/* text inputs / selects: sunken well */
+.px-input {
+  margin: 2px;
+  padding: 1px 4px;
+  background: #15131f;
+  color: var(--fg);
+  outline: none;
+  box-shadow:
+    inset 2px 2px 0 0 #0b0910,
+    0 -2px 0 0 var(--line), 0 2px 0 0 var(--line), -2px 0 0 0 var(--line), 2px 0 0 0 var(--line);
+}
+.px-input:focus { box-shadow: inset 2px 2px 0 0 #0b0910, 0 -2px 0 0 var(--accent), 0 2px 0 0 var(--accent), -2px 0 0 0 var(--accent), 2px 0 0 0 var(--accent); }
+textarea.px-input { resize: vertical; }
+
+/* item rows in lists */
+.px-row { background: transparent; }
+.px-row:hover { background: var(--panel-2); }
+.px-row-on { background: var(--panel-3); box-shadow: inset 2px 0 0 0 var(--accent); }
+
+/* bag slot: navy fill, metal frame, rivets in the corners */
+.px-slot {
+  --slot: var(--cell);
+  --ring: #5b6080;
+  --rivet: #9da3bd;
+  background:
+    linear-gradient(var(--rivet), var(--rivet)) 4px 4px / 2px 2px no-repeat,
+    linear-gradient(var(--rivet), var(--rivet)) calc(100% - 4px) 4px / 2px 2px no-repeat,
+    linear-gradient(var(--rivet), var(--rivet)) 4px calc(100% - 4px) / 2px 2px no-repeat,
+    linear-gradient(var(--rivet), var(--rivet)) calc(100% - 4px) calc(100% - 4px) / 2px 2px no-repeat,
+    var(--slot);
+  box-shadow:
+    inset 0 0 0 2px var(--ring), inset 0 0 0 4px rgba(0, 0, 0, 0.25),
+    0 0 0 2px var(--frame-dark);
+}
+.px-slot-empty { --slot: #262839; --ring: #42465f; --rivet: #5b6080; }
+.px-slot-tablet { --slot: var(--cell-tablet); }
+.px-slot-hl { --ring: color-mix(in oklab, var(--accent) 55%, #5b6080); }
+.px-slot-drop { --ring: var(--good); }
+.px-slot-sel { --ring: var(--accent); --rivet: #fff3c4; }
+
+/* small badge */
+.px-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 4px;
+  background: var(--panel-2);
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+/* outlined pixel text for labels on top of sprites */
+.px-shadow { text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000; }
+
 .scroll-thin::-webkit-scrollbar { width: 8px; height: 8px; }
-.scroll-thin::-webkit-scrollbar-thumb { background: var(--line); border-radius: 4px; }
+.scroll-thin::-webkit-scrollbar-track { background: var(--frame-dark); }
+.scroll-thin::-webkit-scrollbar-thumb { background: var(--line); }
+.scroll-thin { scrollbar-color: var(--line) var(--frame-dark); scrollbar-width: thin; }
 
 input[type="range"] { accent-color: var(--accent); }
-input, select, button { font: inherit; }
+input[type="checkbox"] { accent-color: var(--accent); }
+input, select, button, textarea { font: inherit; }

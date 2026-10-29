@@ -14,12 +14,20 @@ npm run dev                    # http://localhost:3000
 
 - **배치 (/)**: 6열 × 4~7행 가방. 석판/아티팩트 추가, 드래그 이동·교체, 석판 회전(R/더블클릭), 위치 고정(L), 셀별 레벨·활성 여부 실시간 계산, 콤보 태그 카운트.
 - **자동 최적화**: Web Worker에서 simulated annealing으로 배치·회전 탐색. 점수 = Σ(중요도 × 유효 레벨) − 비활성 페널티. 고정(🔒) 아이템은 유지.
+- **AI 목표 설정**: "샤프 아이 중심 정밀 빌드" 처럼 말로 적은 목표를 LLM(Claude 또는 Gemini)이 최적화 설정값(아티팩트 중요도·콤보 목표·관계 규칙·금빛 침 가치·비활성 페널티)으로 바꿔 제안. 배치 계산은 그대로 최적화 엔진이 함. 제안 내용을 확인한 뒤 적용 / 적용하고 최적화 / 되돌리기. (`src/ai/`, `src/app/api/ai/goals/route.ts`)
 - **스크린샷 인식 (/import)**: 게임 캡쳐 → 격자 자동 감지(칸 테두리 프로파일 피팅) → 셀별
   1. 레벨 텍스트 판독 (`cur/max` 3×5 픽셀 폰트, 노란 `-N` = 석판) → 후보를 같은 ★상한 아티팩트 / 석판으로 압축
   2. 스프라이트 분리(배경색 차이 + 연결요소) → 24×24 정규화 → 색 + 실루엣 IoU + 종횡비로 참조 아이콘과 매칭
   참조 아이콘과 실제 게임 스프라이트가 다른 아이템이 많아 처음엔 오인식이 있음. 칸을 클릭해 바로잡고 "전체 학습"을 누르면 브라우저(localStorage)에 템플릿이 저장되어 이후 같은 아이템은 정확히 인식됨.
 - **석판 합성**: 석판 탭의 "합성" 버튼 또는 인식 화면의 칸 지정에서 재료 2개(+각 회전)를 골라 합성 석판 생성. 효과 영역·레벨·제약 무시·배치 조건을 모두 계승하며 결과는 항상 회전 불가 (`src/engine/custom.ts`). 스크린샷 인식은 '합성 석판'인 것만 판별하고(공용 스프라이트), 재료 2개와 각 회전은 칸 클릭 후 사용자가 지정.
 - **데이터 (/db)**: 석판 66종 패턴, 아티팩트 308종 목록.
+
+## AI 목표 설정 키
+
+- 기본은 사용자가 우측 패널 **AI 목표 설정 → 설정**에 자기 API 키를 넣는 방식(BYOK). 키는 그 브라우저 localStorage에만 저장되고, 요청할 때 이 앱의 서버(`/api/ai/goals`)를 거쳐 제공자에게 전달됨.
+- 서버 키를 넣으면 사용자가 키 없이 쓸 수 있음: 서버 환경 변수 `ANTHROPIC_API_KEY` 또는 `GEMINI_API_KEY`. 단 공개 배포에서는 누구나 그 키로 요청할 수 있으니 사용량 제한을 따로 걸어둘 것.
+- 기본 모델: Claude `claude-opus-5-5`, Gemini `gemini-2.5-flash`. 설정에서 바꿀 수 있음.
+- 정적 배포(Vercel static / GitHub Pages)로는 API 라우트가 동작하지 않음. Node 서버(`npm run build && npm start`)로 배포해야 함.
 
 ## 학습 템플릿을 배포에 포함시키기
 
@@ -32,10 +40,12 @@ npm run dev                    # http://localhost:3000
 
 ```
 src/engine/   grid.ts(레벨 계산), optimize.ts(최적화), optimize.worker.ts, catalog.ts, types.ts
+src/ai/       goals.ts(요청/응답 타입·스키마·검증), prompt.ts(서버 전용: 프롬프트 생성)
+src/app/api/ai/goals/route.ts   LLM 호출 (Claude SDK / Gemini REST)
 src/data/     tablets.json, artifacts.json (빌드 산출물), *.raw.json (원본 스크랩), artifacts.ko.json
 src/vision/   signature.ts(셀 이미지 시그니처), templates.ts(아이콘/학습 템플릿 매칭)
 src/store/    useBag.ts(상태+localStorage), useOptimizer.ts
-src/components/ BagGrid, Palette, Inventory, ControlPanel, TabletPattern, ItemIcon
+src/components/ BagGrid, Palette, Inventory, ControlPanel, GoalsPanel, AiGoalsPanel, TabletPattern, ItemIcon
 scripts/      build-data.mjs(raw→json), fetch-icons.mjs, engine-test.mjs
 ```
 
@@ -48,3 +58,4 @@ scripts/      build-data.mjs(raw→json), fetch-icons.mjs, engine-test.mjs
 - 미구현: 각인 석판, 신비 슬롯, 지혜(Wisdom) 석판(효과 불명확).
 
 데이터 출처: sephiria.tools (1.0 게임 파일 기반), 나무위키 세피리아/석판·아티팩트.
+폰트: [Galmuri](https://github.com/quiple/galmuri) (SIL OFL 1.1, `src/app/fonts/galmuri/LICENSE.txt`).

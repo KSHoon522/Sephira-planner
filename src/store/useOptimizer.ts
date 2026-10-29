@@ -1,7 +1,7 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { OptimizeDone, OptimizeProgress, OptimizeRequest } from "@/engine/optimize";
-import type { BagApi } from "./useBag";
+import type { BagApi, BagState } from "./useBag";
 
 export interface OptState {
   running: boolean;
@@ -19,8 +19,9 @@ export function useOptimizer(bag: BagApi) {
 
   useEffect(() => () => workerRef.current?.terminate(), []);
 
-  const run = useCallback((timeMs: number, restarts: number, live: boolean) => {
-    const b = bagRef.current;
+  /** `from` lets a caller optimise a state it just dispatched, before the hook has re-rendered with it. */
+  const run = useCallback((timeMs: number, restarts: number, live: boolean, from?: BagState) => {
+    const s = from ?? bagRef.current.state;
     workerRef.current?.terminate();
     const w = new Worker(new URL("../engine/optimize.worker.ts", import.meta.url));
     workerRef.current = w;
@@ -33,10 +34,10 @@ export function useOptimizer(bag: BagApi) {
       if (m.type === "done") { setOpt((o) => ({ ...o, running: false })); w.terminate(); }
     };
     const req: OptimizeRequest = {
-      layout: { cells: b.state.cells },
-      items: Object.values(b.state.items),
-      cfg: b.state.cfg,
-      evalOpts: b.state.evalOpts,
+      layout: { cells: s.cells },
+      items: Object.values(s.items),
+      cfg: s.cfg,
+      evalOpts: s.evalOpts,
       timeMs, restarts,
     };
     w.postMessage(req);
