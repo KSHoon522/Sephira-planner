@@ -1,23 +1,24 @@
 "use client";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ARTIFACTS, TABLETS, catalog } from "@/engine/catalog";
-import { segmentCell, signatureFromCrop, type Signature } from "@/vision/signature";
+import { ARTIFACTS, TABLETS, RARITY_KO, catalog } from "@/engine/catalog";
+import { estimatePixelGrid, extractSprite, readBadge, sampleNativeCell, type Sprite } from "@/vision/sprite";
 import { detectGrid, evenGrid, type Rect } from "@/vision/grid";
 import { readCellText, type CellText } from "@/vision/text";
-import { loadIconTemplates, loadLearnedTemplates, loadBundledTemplates, matchSignature, saveLearnedTemplate, clearLearnedTemplates, exportTemplateFile, importTemplateFile, type Template, type Match } from "@/vision/templates";
+import { loadIconTemplates, loadLearnedTemplates, loadBundledTemplates, matchSprite, assignUnique, saveLearnedTemplate, clearLearnedTemplates, exportTemplateFile, importTemplateFile, legacyLearnedCount, clearLegacyLearned, type Template, type Match } from "@/vision/templates";
 import { writeImportedLayout } from "@/store/useBag";
 import { ItemIcon } from "@/components/ItemIcon";
 import { TabletPattern } from "@/components/TabletPattern";
 import { TabletCombiner } from "@/components/TabletCombiner";
 import { customId, parseCustomId, tabletDefById } from "@/engine/custom";
 import { evaluate } from "@/engine/grid";
-import type { ItemInstance } from "@/engine/types";
+import type { ItemInstance, Rarity } from "@/engine/types";
 
 interface CellRec {
   index: number;
   rect: Rect;
-  sig: Signature | null; // null => empty
+  spr: Sprite | null; // null => empty
+  badge: Rarity | null; // rarity read from the top-right badge (artifacts)
   matches: Match[];
   choice: string; // template key or "empty"
   rotation: number; // tablet rotation 0-3 (clockwise 90° steps)
@@ -34,6 +35,8 @@ export default function ImportPage() {
   const [rows, setRows] = useState(4);
   const [lastRow, setLastRow] = useState(6);
   const [gridCells, setGridCells] = useState<Rect[] | null>(null);
+  const [gridPitch, setGridPitch] = useState<number | null>(null);
+  const [legacyCount, setLegacyCount] = useState(0);
   const [gridInfo, setGridInfo] = useState<string>("");
   const [cells, setCells] = useState<CellRec[]>([]);
   const [templates, setTemplates] = useState<Template[] | null>(null);
@@ -48,7 +51,10 @@ export default function ImportPage() {
   const cellCount = (rows - 1) * 6 + lastRow;
 
   useEffect(() => {
-    loadIconTemplates((d, t) => setProgress([d, t])).then((icons) => setTemplates([...icons, ...loadBundledTemplates(), ...loadLearnedTemplates()]));
+    loadIconTemplates((d, t) => setProgress([d, t])).then((icons) => {
+      setTemplates([...icons, ...loadBundledTemplates(), ...loadLearnedTemplates()]);
+      setLegacyCount(legacyLearnedCount());
+    });
   }, []);
 
   const loadFile = useCallback((file: File | Blob) => {
@@ -79,6 +85,7 @@ export default function ImportPage() {
     const id = imgDataRef.current;
     if (!id || !rect || rect.w < 30 || rect.h < 30) { setGridCells(null); return; }
     const fit = detectGrid(id, rect, 6, rows);
+    setGridPitch(fit ? fit.pitchX : null);
     if (fit) { setGridCells(fit.cells); setGridInfo(`격자 감지됨 · 칸 ${fit.cellW.toFixed(0)}×${fit.cellH.toFixed(0)}px · 간격 ${fit.pitchX.toFixed(0)}px`); }
     else { setGridCells(evenGrid(rect, 6, rows)); setGridInfo("격자 자동 감지 실패 → 균등 분할 사용 (영역을 칸 테두리에 맞춰 조정하세요)"); }
   }, [rect, rows, img]);
@@ -150,6 +157,11 @@ export default function ImportPage() {
     if (!img || !gridCells || !templates || !id) return;
     setBusy(true);
     await new Promise((r) => setTimeout(r, 10));
+    const raster = { w: id.width, h: id.height, data: id.data };
+    // recover the game's own pixel grid once for the whole bag, then read every cell at that resolution
+    const first = gridCells[0], last = gridCells[cellCount - 1];
+    const region = { x: first.x, y: first.y, w: last.x + last.w - first.x, h: last.y + last.h - first.y };
+    const pg = estimatePixelGrid(raster, region, gridPitch ?? (gridCells[1] ? gridCells[1].x - first.x : first.w));
     const cv = document.createElement("canvas");
     const ctx = cv.getContext("2d", { willReadFrequently: true })!;
     const out: CellRec[] = [];
@@ -158,17 +170,13 @@ export default function ImportPage() {
       const x = Math.round(r.x), y = Math.round(r.y), w = Math.round(r.w), h = Math.round(r.h);
       cv.width = w; cv.height = h;
       ctx.drawImage(img, x, y, w, h, 0, 0, w, h);
-      const cellData = ctx.getImageData(0, 0, w, h);
-      const seg = segmentCell(cellData);
-      const text = readCellText(cellData);
+      const text = readCellText(ctx.getImageData(0, 0, w, h));
       const tc = document.createElement("canvas"); tc.width = 44; tc.height = 44;
       tc.getContext("2d")!.drawImage(img, x, y, w, h, 0, 0, 44, 44);
-      if (seg.pixels === 0) { out.push({ index: i, rect: r, sig: null, matches: [], choice: "empty", rotation: 0, thumb: tc.toDataURL(), text }); continue; }
-      const bw = seg.x1 - seg.x0, bh = seg.y1 - seg.y0;
-      const crop = ctx.getImageData(seg.x0, seg.y0, bw, bh).data;
-      const cmask = new Uint8Array(bw * bh);
-      for (let yy = 0; yy < bh; yy++) for (let xx = 0; xx < bw; xx++) cmask[yy * bw + xx] = seg.mask[(seg.y0 + yy) * w + seg.x0 + xx];
-      const sig = signatureFromCrop(crop, bw, bh, cmask, seg.bg);
+      const native = sampleNativeCell(raster, r, pg);
+      const spr = extractSprite(native);
+      if (!spr) { out.push({ index: i, rect: r, spr: null, badge: null, matches: [], choice: "empty", rotation: 0, thumb: tc.toDataURL(), text }); continue; }
+      const badge = text.kind === "tablet" ? null : readBadge(native);
       // narrow candidates using the level text: tablets vs artifacts with the same max level
       let pool = templates;
       if (text.kind === "tablet") pool = templates.filter((t) => t.kind === "tablet");
@@ -181,8 +189,15 @@ export default function ImportPage() {
         const lv0 = templates.filter((t) => t.kind === "artifact" && catalog.artifacts.get(t.defId)?.maxLevel === 0);
         pool = lv0.length ? lv0 : templates;
       }
-      const matches = matchSignature(sig, pool, 6, isRotatableId);
-      out.push({ index: i, rect: r, sig, matches, choice: matches[0]?.template.key ?? "empty", rotation: matches[0]?.rotation ?? 0, thumb: tc.toDataURL(), text });
+      const matches = matchSprite(spr, pool, { topN: 10, isRotatable: isRotatableId, badge });
+      out.push({ index: i, rect: r, spr, badge, matches, choice: "empty", rotation: 0, thumb: tc.toDataURL(), text });
+      if (i % 6 === 5) await new Promise((res) => setTimeout(res, 0)); // let the busy state paint
+    }
+    // one pass over the whole bag so a unique artifact is not given to two cells
+    const picks = assignUnique(out.map((c) => c.matches));
+    for (const [i, c] of out.entries()) {
+      const m = c.matches[picks[i]];
+      if (m) { c.choice = m.template.key; c.rotation = m.rotation; }
     }
     setCells(out);
     setBusy(false);
@@ -196,12 +211,12 @@ export default function ImportPage() {
   const setRotation = (index: number, rotation: number) => setCells((cs) => cs.map((x) => (x.index === index ? { ...x, rotation: ((rotation % 4) + 4) % 4 } : x)));
 
   const learn = (c: CellRec) => {
-    if (!c.sig || c.choice === "empty") return;
+    if (!c.spr || c.choice === "empty") return;
     const ci = c.choice.indexOf(":");
     const kind = c.choice.slice(0, ci) as "artifact" | "tablet", defId0 = c.choice.slice(ci + 1);
     // synthesised tablets all share one sprite → learn them under the generic "custom" key
     const defId = defId0.startsWith("custom:") ? "custom" : defId0;
-    saveLearnedTemplate({ key: `${kind}:${defId}`, kind, defId, sig: c.sig, rot: kind === "tablet" ? c.rotation : 0 });
+    saveLearnedTemplate({ key: `${kind}:${defId}`, kind, defId, spr: c.spr, rot: kind === "tablet" ? c.rotation : 0 });
   };
   const refreshLearned = () => setTemplates((t) => (t ? [...t.filter((x) => x.source === "icon"), ...loadBundledTemplates(), ...loadLearnedTemplates()] : t));
   const [ioMsg, setIoMsg] = useState("");
@@ -313,8 +328,9 @@ export default function ImportPage() {
             </div>
             {cells.length === 0 && <p className="text-[var(--muted)] leading-relaxed">인식 결과가 여기에 표시됩니다. 처음엔 참조 아이콘과 게임 스프라이트 차이로 오인식이 있을 수 있어요. 칸을 클릭해 올바른 아이템을 고른 뒤 &quot;전체 학습&quot;을 누르면 이후 정확도가 크게 올라갑니다.</p>}
             {cells.map((c) => {
-              const best = c.matches[0];
-              const conf = best ? Math.max(0, Math.min(1, 1 - (best.dist - 0.4) / 1.4)) : 0;
+              const best = c.matches.find((m) => m.template.key === c.choice);
+              // native-pixel distance: the same item scores ~0.2-0.3, look-alikes (other grimoires) ~0.45, others 0.6+
+              const conf = best ? Math.max(0, Math.min(1, 1 - (best.dist - 0.15) / 0.45)) : 0;
               return (
                 <div key={c.index} className="px-row flex items-center gap-2 p-1 bg-[var(--panel-2)] cursor-pointer" onClick={() => setPicker(c.index)}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -324,7 +340,8 @@ export default function ImportPage() {
                       <span>#{c.index + 1}</span>
                       <span>({c.index % 6 + 1},{Math.floor(c.index / 6) + 1})</span>
                       {c.text.kind !== "none" && <span className="text-[var(--accent)]">{c.text.kind === "tablet" ? "석판" : `Lv ${c.text.cur ?? "?"}/${c.text.max ?? "?"}`}</span>}
-                      {c.sig && <span style={{ color: conf > 0.6 ? "var(--good)" : conf > 0.35 ? "var(--warn)" : "var(--bad)" }}>신뢰도 {(conf * 100).toFixed(0)}%</span>}
+                      {c.badge && <span className={`rarity-${c.badge}`} style={{ color: "var(--rc)" }} title="칸 오른쪽 위 표시로 읽은 등급">{RARITY_KO[c.badge]}</span>}
+                      {c.spr && best && <span style={{ color: conf > 0.6 ? "var(--good)" : conf > 0.35 ? "var(--warn)" : "var(--bad)" }}>신뢰도 {(conf * 100).toFixed(0)}%</span>}
                     </div>
                     <div className="truncate flex items-center gap-1" style={{ color: c.choice === "empty" ? "var(--muted)" : "var(--fg)" }}>
                       {labelOf(c.choice)}
@@ -355,6 +372,12 @@ export default function ImportPage() {
                 <button onClick={() => { if (confirm("내 학습 템플릿을 모두 삭제할까요? (내장 템플릿은 유지)")) { clearLearnedTemplates(); refreshLearned(); } }} className="px-btn px-btn-ghost">내 학습 초기화</button>
               </div>
               {ioMsg && <div className="text-[var(--accent)]">{ioMsg}</div>}
+              {legacyCount > 0 && (
+                <div className="text-[var(--warn)]">
+                  이전 인식 방식으로 저장된 학습 {legacyCount}개는 새 방식과 맞지 않아 쓰지 않습니다. 캡쳐를 다시 인식해서 학습해 주세요.{" "}
+                  <button onClick={() => { clearLegacyLearned(); setLegacyCount(0); }} className="px-btn px-btn-sm px-btn-ghost">이전 학습 지우기</button>
+                </div>
+              )}
             </div>
           </>
         )}
